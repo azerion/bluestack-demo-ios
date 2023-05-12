@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa_Light.ttf">
+            <string>Nexa-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="scrollview" destination="xiw-uW-0Lf" id="1QQ-Mn-o9F"/>
+                <outlet property="settingsButton" destination="Oe1-sT-YdB" id="cNR-bC-F5j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="1518"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiw-uW-0Lf">
+                    <rect key="frame" x="0.0" y="127" width="214" height="1391"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-bl-4z3">
+                            <rect key="frame" x="1" y="30" width="193" height="35"/>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="BlueStack" image="blueStack">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openMASViewController:" destination="-1" eventType="touchUpInside" id="SH0-1e-ZVL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okR-T5-ajl">
+                            <rect key="frame" x="1" y="342" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="K0Q-pR-ubS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Interstitial" image="INTER">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openInterstitialViewController:" destination="-1" eventType="touchUpInside" id="QVd-59-jxs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpS-Kp-k4R">
+                            <rect key="frame" x="1" y="259" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="Tjg-Xb-rre"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Infeed" image="INFEED">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openInfeedViewController:" destination="-1" eventType="touchUpInside" id="txx-5O-3TV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lns-li-v98">
+                            <rect key="frame" x="1" y="425" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="hac-QA-roE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Native Ad" image="NATIVE-AD">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openNativeViewController:" destination="-1" eventType="touchUpInside" id="DRW-GD-Riy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-mG-3GJ">
+                            <rect key="frame" x="1" y="508" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="QBy-4P-Ka6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Carrousel" image="CARROUSEL">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openCarrouselViewController:" destination="-1" eventType="touchUpInside" id="VkQ-xM-S4F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-Eh-tnc">
+                            <rect key="frame" x="1" y="591" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="DNV-Ap-IsO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Swift" image="SWIFT">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openSwiftViewController:" destination="-1" eventType="touchUpInside" id="oLG-PV-fQV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHD-Ls-Peb">
+                            <rect key="frame" x="0.0" y="674" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="Cdq-o4-7qy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="4 IN 1" image="4IN1">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="open4In1ViewController:" destination="-1" eventType="touchUpInside" id="GIh-8A-6Nb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDT-cC-LL8">
+                            <rect key="frame" x="1" y="757" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="vVr-oh-b2C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Pager" image="CARROUSEL">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openPagerViewController:" destination="-1" eventType="touchUpInside" id="NGx-QV-Gvc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7s-8n-8a1">
+                            <rect key="frame" x="1" y="176" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="d4X-wh-7EU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Banner" image="BANNER">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openBannerViewController:" destination="-1" eventType="touchUpInside" id="gJd-Ex-3Pi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-Ye-SF0">
+                            <rect key="frame" x="1" y="840" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="ljb-bD-6jm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Rewarded Video" image="rewardedVideo">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openMiscVC:" destination="-1" eventType="touchUpInside" id="5PH-sv-mIL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWz-zc-Gq8">
+                            <rect key="frame" x="0.0" y="93" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="KPS-oW-gnP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Appsfire" image="appsfire">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openAfViewController:" destination="-1" eventType="touchUpInside" id="4S2-jJ-GZF"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-Gk-Mhq" userLabel="Mopub">
+                            <rect key="frame" x="0.0" y="990" width="214" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="VrY-M3-vos"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title=" MoPub Adapter " image="plugin">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openMopubDemo:" destination="-1" eventType="touchUpInside" id="SSZ-7k-ZBx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uo9-gR-uFL">
+                            <rect key="frame" x="0.0" y="990" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="lu4-4D-qAH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="GoogleMobileAds Adapter" image="plugin">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openDFPDemo:" destination="-1" eventType="touchUpInside" id="EwB-Cy-sBI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6r-tf-XhG">
+                            <rect key="frame" x="1" y="1065" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="N62-Ze-yQw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="MF" image="localProxy">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showSync:" destination="-1" eventType="touchUpInside" id="SYH-ME-8Xh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHe-af-4WL">
+                            <rect key="frame" x="0.0" y="1148" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="NzT-XA-q5h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Thumbnail" image="NATIVE-AD">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openThumbnailViewController:" destination="-1" eventType="touchUpInside" id="B8q-WY-6rk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-sT-YdB">
+                            <rect key="frame" x="0.0" y="915" width="214" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="krq-gT-pL5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Settings" image="SETTINGS">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openSettingsViewcontroller:" destination="-1" eventType="touchUpInside" id="xD9-D3-r4n"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="okR-T5-ajl" firstAttribute="top" secondItem="CpS-Kp-k4R" secondAttribute="bottom" constant="8" id="2Ah-t2-BLf"/>
+                        <constraint firstAttribute="trailing" secondItem="Uo9-gR-uFL" secondAttribute="trailing" id="2ur-Cr-cmI"/>
+                        <constraint firstItem="eWz-zc-Gq8" firstAttribute="centerX" secondItem="xiw-uW-0Lf" secondAttribute="centerX" id="5eD-Bp-9A9"/>
+                        <constraint firstItem="0FE-bl-4z3" firstAttribute="top" secondItem="xiw-uW-0Lf" secondAttribute="top" constant="30" id="7Dk-cp-FGr"/>
+                        <constraint firstItem="eWz-zc-Gq8" firstAttribute="leading" secondItem="OHD-Ls-Peb" secondAttribute="leading" id="9nH-hF-92q"/>
+                        <constraint firstAttribute="trailing" secondItem="Oe1-sT-YdB" secondAttribute="trailing" id="AEX-CX-hBe"/>
+                        <constraint firstItem="lns-li-v98" firstAttribute="top" secondItem="okR-T5-ajl" secondAttribute="bottom" constant="8" id="BXj-xg-KPX"/>
+                        <constraint firstItem="CpS-Kp-k4R" firstAttribute="top" secondItem="P7s-8n-8a1" secondAttribute="bottom" constant="8" id="Bbw-mf-xUc"/>
+                        <constraint firstItem="pt0-Gk-Mhq" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" id="CfG-aW-hn7"/>
+                        <constraint firstItem="eWz-zc-Gq8" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" id="Cyj-cB-SYw"/>
+                        <constraint firstItem="6S8-mG-3GJ" firstAttribute="leading" secondItem="yaI-Eh-tnc" secondAttribute="leading" id="DVi-Dl-ryA"/>
+                        <constraint firstItem="yaI-Eh-tnc" firstAttribute="top" secondItem="6S8-mG-3GJ" secondAttribute="bottom" constant="8" id="EGA-To-fvU"/>
+                        <constraint firstItem="P7s-8n-8a1" firstAttribute="leading" secondItem="CpS-Kp-k4R" secondAttribute="leading" id="GyO-nr-4yu"/>
+                        <constraint firstItem="P7s-8n-8a1" firstAttribute="top" secondItem="eWz-zc-Gq8" secondAttribute="bottom" constant="8" id="Hsu-dv-bwL"/>
+                        <constraint firstItem="OHD-Ls-Peb" firstAttribute="top" secondItem="yaI-Eh-tnc" secondAttribute="bottom" constant="8" id="Lny-I2-m7L"/>
+                        <constraint firstAttribute="trailing" secondItem="0FE-bl-4z3" secondAttribute="trailing" constant="20" id="Mk0-Rh-QBm"/>
+                        <constraint firstItem="SDT-cC-LL8" firstAttribute="leading" secondItem="7Ai-Ye-SF0" secondAttribute="leading" id="OXm-Mj-Cq4"/>
+                        <constraint firstItem="yaI-Eh-tnc" firstAttribute="leading" secondItem="SDT-cC-LL8" secondAttribute="leading" id="Oau-cL-evT"/>
+                        <constraint firstAttribute="trailing" secondItem="DHe-af-4WL" secondAttribute="trailing" id="PWu-qD-U0T"/>
+                        <constraint firstItem="eWz-zc-Gq8" firstAttribute="top" secondItem="0FE-bl-4z3" secondAttribute="bottom" constant="28" id="RYz-o2-1tP"/>
+                        <constraint firstItem="Oe1-sT-YdB" firstAttribute="top" secondItem="7Ai-Ye-SF0" secondAttribute="bottom" id="TbR-mu-Ly8"/>
+                        <constraint firstItem="SDT-cC-LL8" firstAttribute="top" secondItem="OHD-Ls-Peb" secondAttribute="bottom" constant="8" id="VnY-y7-7gN"/>
+                        <constraint firstItem="SDT-cC-LL8" firstAttribute="trailing" secondItem="7Ai-Ye-SF0" secondAttribute="trailing" id="Ydy-eJ-b3N"/>
+                        <constraint firstAttribute="trailing" secondItem="P7s-8n-8a1" secondAttribute="trailing" constant="-1" id="Zkk-L2-shu"/>
+                        <constraint firstItem="Uo9-gR-uFL" firstAttribute="top" secondItem="pt0-Gk-Mhq" secondAttribute="bottom" id="Zz5-U3-kVW"/>
+                        <constraint firstItem="Uo9-gR-uFL" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" id="cWx-Xd-vv7"/>
+                        <constraint firstItem="P7s-8n-8a1" firstAttribute="trailing" secondItem="CpS-Kp-k4R" secondAttribute="trailing" id="dAM-4Q-hV1"/>
+                        <constraint firstItem="lns-li-v98" firstAttribute="leading" secondItem="6S8-mG-3GJ" secondAttribute="leading" id="eeC-Zx-MVQ"/>
+                        <constraint firstItem="0FE-bl-4z3" firstAttribute="leading" secondItem="P7s-8n-8a1" secondAttribute="leading" id="fFI-IR-ne0"/>
+                        <constraint firstItem="lns-li-v98" firstAttribute="trailing" secondItem="6S8-mG-3GJ" secondAttribute="trailing" id="h1E-q3-92W"/>
+                        <constraint firstAttribute="trailing" secondItem="pt0-Gk-Mhq" secondAttribute="trailing" id="iQE-Cq-nBA"/>
+                        <constraint firstItem="6S8-mG-3GJ" firstAttribute="trailing" secondItem="yaI-Eh-tnc" secondAttribute="trailing" id="ikb-vN-FfJ"/>
+                        <constraint firstItem="6S8-mG-3GJ" firstAttribute="top" secondItem="lns-li-v98" secondAttribute="bottom" constant="8" id="kYV-gz-buB"/>
+                        <constraint firstItem="okR-T5-ajl" firstAttribute="trailing" secondItem="lns-li-v98" secondAttribute="trailing" id="kwo-zF-fIY"/>
+                        <constraint firstItem="7Ai-Ye-SF0" firstAttribute="trailing" secondItem="R6r-tf-XhG" secondAttribute="trailing" id="l7j-tu-Ry8"/>
+                        <constraint firstItem="DHe-af-4WL" firstAttribute="top" secondItem="R6r-tf-XhG" secondAttribute="bottom" constant="8" symbolic="YES" id="mQr-Dy-HJH"/>
+                        <constraint firstItem="pt0-Gk-Mhq" firstAttribute="top" secondItem="Oe1-sT-YdB" secondAttribute="bottom" id="oWi-Ag-SC4"/>
+                        <constraint firstItem="0FE-bl-4z3" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" constant="1" id="olB-Jv-pIg"/>
+                        <constraint firstAttribute="bottom" secondItem="DHe-af-4WL" secondAttribute="bottom" constant="20" id="rmk-9Z-cEK"/>
+                        <constraint firstAttribute="trailing" secondItem="eWz-zc-Gq8" secondAttribute="trailing" id="sub-t4-LXo"/>
+                        <constraint firstItem="eWz-zc-Gq8" firstAttribute="trailing" secondItem="OHD-Ls-Peb" secondAttribute="trailing" id="u6O-aD-Nup"/>
+                        <constraint firstItem="R6r-tf-XhG" firstAttribute="top" secondItem="Uo9-gR-uFL" secondAttribute="bottom" id="uti-mf-Xoo"/>
+                        <constraint firstItem="7Ai-Ye-SF0" firstAttribute="leading" secondItem="R6r-tf-XhG" secondAttribute="leading" id="vGg-Vv-pie"/>
+                        <constraint firstItem="Oe1-sT-YdB" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" id="vrZ-NU-kUA"/>
+                        <constraint firstItem="DHe-af-4WL" firstAttribute="leading" secondItem="xiw-uW-0Lf" secondAttribute="leading" id="wWv-ZL-twt"/>
+                        <constraint firstItem="okR-T5-ajl" firstAttribute="leading" secondItem="lns-li-v98" secondAttribute="leading" id="wui-CT-w9j"/>
+                        <constraint firstItem="7Ai-Ye-SF0" firstAttribute="top" secondItem="SDT-cC-LL8" secondAttribute="bottom" constant="8" id="xU7-PN-BcW"/>
+                        <constraint firstItem="CpS-Kp-k4R" firstAttribute="trailing" secondItem="okR-T5-ajl" secondAttribute="trailing" id="yAX-dd-VYa"/>
+                        <constraint firstItem="yaI-Eh-tnc" firstAttribute="trailing" secondItem="SDT-cC-LL8" secondAttribute="trailing" id="ynE-Sd-nV2"/>
+                        <constraint firstItem="CpS-Kp-k4R" firstAttribute="leading" secondItem="okR-T5-ajl" secondAttribute="leading" id="z0D-I4-3pM"/>
+                    </constraints>
+                </scrollView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-j5-zGm">
+                    <rect key="frame" x="16" y="28" width="182" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="F1O-fY-jwX"/>
+                        <constraint firstAttribute="width" constant="182" id="WCV-mg-Sbz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VfS-tb-muR"/>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="Z1V-yj-eHi"/>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bkY-1d-CaH"/>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="centerX" secondItem="OdK-j5-zGm" secondAttribute="centerX" id="cA6-5y-qTe"/>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="cGB-7T-BZn"/>
+                <constraint firstItem="xiw-uW-0Lf" firstAttribute="top" secondItem="OdK-j5-zGm" secondAttribute="bottom" constant="17" id="tyy-IU-z2q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-184" y="573.01349325337333"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="4IN1" width="27.5" height="44.5"/>
+        <image name="BANNER" width="27.5" height="44.5"/>
+        <image name="CARROUSEL" width="27.5" height="44.5"/>
+        <image name="INFEED" width="27.5" height="44.5"/>
+        <image name="INTER" width="27.5" height="44.5"/>
+        <image name="LOGO" width="129" height="18.5"/>
+        <image name="NATIVE-AD" width="27.5" height="44.5"/>
+        <image name="SETTINGS" width="27.5" height="29"/>
+        <image name="SWIFT" width="27.5" height="44.5"/>
+        <image name="appsfire" width="27.5" height="28"/>
+        <image name="blueStack" width="30" height="35"/>
+        <image name="localProxy" width="27.5" height="44.5"/>
+        <image name="plugin" width="19" height="19"/>
+        <image name="rewardedVideo" width="29.5" height="29.5"/>
+    </resources>
+</document>

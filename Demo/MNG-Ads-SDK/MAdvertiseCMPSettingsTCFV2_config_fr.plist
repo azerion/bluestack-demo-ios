@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consentToolManagement</key>
+	<dict>
+		<key>consentManagementStoredData</key>
+		<string>Gérer vos données personnelles collectées</string>
+		<key>consentManagementVendorsButtonTitle</key>
+		<string>Voir la liste des partenaires</string>
+		<key>consentManagementPublisherName</key>
+		<string>MAdvertise-Demo</string>
+		<key>vendorPurposeAccepted</key>
+		<string>Accepté</string>
+		<key>vendorPurposeDenied</key>
+		<string>Refusé</string>
+		<key>vendorListHeaderTitle</key>
+		<string>Entreprise</string>
+		<key>vendorEmptyFields</key>
+		<string>None</string>
+		<key>consentManagementAcceptAllButtonTitle</key>
+		<string>TOUT ACCEPTER</string>
+		<key>consentManagementRejectAllButtonTitle</key>
+		<string>TOUT REFUSER</string>
+		<key>vendorDetailPurposes</key>
+		<string>Usages</string>
+		<key>vendorDetailFeatures</key>
+		<string>Fonctionnalités</string>
+		<key>vendorListSorted</key>
+		<true/>
+		<key>vendorDetailSPPurposes</key>
+		<string>Usages spéciaux</string>
+		<key>vendorDetailSPFeatures</key>
+		<string>Fonctionnalités spéciales</string>
+		<key>vendorDetailPolicy</key>
+		<string>Voir la politique de confidentialité</string>
+		<key>consentToolPartnersFakeIAB</key>
+		<string>Partenaires ne faisant pas partis de l&apos;IAB:</string>
+		<key>consentToolPartnersIAB</key>
+		<string>Partenaires faisant partis de l&apos;IAB:</string>
+		<key>vendorListGoogleAdsShow</key>
+		<string>Voir la Liste des fournisseurs de technologies publicitaires</string>
+		<key>vendorListGoogleAdsLabel</key>
+		<string>Fournisseurs de technologies publicitaires</string>
+		<key>legitimateUses</key>
+		<string>Usages Légitimes</string>
+	</dict>
+	<key>dataManagement</key>
+	<dict>
+		<key>dataManagementTitle</key>
+		<string>Vos préférences sur les données</string>
+		<key>dataManagementSubtitle</key>
+		<string>Gérer vos données personnelles collectées par les partenaires tiers.</string>
+		<key>dataManagementDataAccess</key>
+		<string>Accèder aux données</string>
+		<key>dataManagementDataAccessDescription</key>
+		<string>Vous pouvez obtenir vos données (personnelles ou non) collectées par notre système.</string>
+		<key>dataManagementRectifyData</key>
+		<string>Rectifier les données</string>
+		<key>dataManagementRectifyDataDescriptionOne</key>
+		<string>Vous pourrez rectifier vos données incomplètes ou erronées après reception par email.</string>
+		<key>dataManagementRectifyDataDescriptionTwo</key>
+		<string>Veuillez saisir dans le champ ci-dessus une adresse email pour recevoir vos données. Vous recevrez un email dans les prochains jours. L&apos;adresse email sera supprimée de notre système par la suite.</string>
+		<key>dataManagementRectifyDataEmailHint</key>
+		<string>Adresse email</string>
+		<key>dataManagementRequestInformation</key>
+		<string>Valider</string>
+		<key>dataManagementOptOut</key>
+		<string>Retrait / Suppression</string>
+		<key>dataManagementOptInDescription</key>
+		<string>Si vous souhaitez supprimer vos données, toutes les données que nous avons collecté en rapport avec votre identifiant publicitaire seront supprimées.</string>
+		<key>dataManagementRequestDeletion</key>
+		<string>Confirmer la suppression</string>
+		<key>dataManagementNoSelectionError</key>
+		<string>Veuillez choisir l&apos;une des deux options.</string>
+		<key>dataManagementOptoutMessage</key>
+		<string>Votre statut sera réglé sur&apos;Opt-out&apos;. Il sera mis fin à la collecte et au traitement des données. Vous ne recevrez donc plus de publicité personnalisée ou d&apos;expérience utilisateur basée sur la collecte et le traitement des données.</string>
+		<key>dataManagementRequestInformationMessage</key>
+		<string>Merci pour votre demande ! Vous recevrez un courriel dans les prochaines semaines (maximum 30 jours). Après l&apos;envoi des données, votre adresse e-mail sera supprimée de notre système dans les plus brefs délais.</string>
+		<key>dataManagementSubmissionError</key>
+		<string>Une erreur s&apos;est produite, veuillez vérifier votre connexion Internet ou réessayer plus tard.</string>
+		<key>warningTitle</key>
+		<string>Attention</string>
+		<key>infoOkButtonTitle</key>
+		<string>Ok</string>
+	</dict>
+	<key>consentToolColorPalette</key>
+	<dict>
+		<key>primaryBackground</key>
+		<string>ffffff</string>
+		<key>secondaryBackground</key>
+		<string>7021FF</string>
+		<key>primaryText</key>
+		<string>000000</string>
+		<key>secondaryText</key>
+		<string>000000</string>
+	</dict>
+	<key>consentToolCloseButton</key>
+	<dict>
+		<key>closeSrcImage</key>
+		<string>icon-close</string>
+		<key>closeResizeWidht</key>
+		<string>40</string>
+		<key>closeResizeHeight</key>
+		<string>40</string>
+		<key>closeConstaintTop</key>
+		<string>10</string>
+		<key>closeConstaintTrailing</key>
+		<string>10</string>
+	</dict>
+</dict>
+</plist>

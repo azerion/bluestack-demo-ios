@@ -1,0 +1,6 @@
+
+
+better.letters.com--[01/Jul/1995:00:00:12 -0400] "GET /ghjk/ghj/hjkl/jhk/gifname.gif HTTP/1.0" 200 0
+better.letters.com--[01/Jul/1995:00:00:12 -0400] "GET /ghjk/ghj/hjkl/jhk/gifname.gif HTTP/1.0" 200 0
+better.letters.com--[01/Jul/1995:00:00:12 -0400] "GET /ghjk/ghj/hjkl/jhk/gifname.gif HTTP/1.0" 200 0
+better.letters.com--[01/Jul/1995:00:00:12 -0400] "GET /ghjk/ghj/hjkl/jhk/gifname.gif HTTP/1.0" 200 0

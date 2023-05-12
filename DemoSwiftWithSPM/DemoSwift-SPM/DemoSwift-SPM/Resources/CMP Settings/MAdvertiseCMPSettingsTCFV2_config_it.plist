@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consentToolManagement</key>
+	<dict>
+		<key>consentManagementStoredData</key>
+		<string>Gestisci i tuoi dati personali</string>
+		<key>consentManagementVendorsButtonTitle</key>
+		<string>Vedi l&apos;elenco dei fornitori</string>
+		<key>consentManagementPublisherName</key>
+		<string>MAdvertise-Demo</string>
+		<key>vendorPurposeAccepted</key>
+		<string>Accettato</string>
+		<key>vendorPurposeDenied</key>
+		<string>Negato</string>
+		<key>vendorListHeaderTitle</key>
+		<string>AZIENDA</string>
+		<key>vendorEmptyFields</key>
+		<string>Nessuno</string>
+		<key>consentManagementAcceptAllButtonTitle</key>
+		<string>Accetta tutto</string>
+		<key>consentManagementRejectAllButtonTitle</key>
+		<string>Rifiuta tutto</string>
+		<key>vendorDetailPurposes</key>
+		<string>Finalità</string>
+		<key>vendorDetailFeatures</key>
+		<string>Funzionalità</string>
+		<key>vendorListSorted</key>
+		<true/>
+		<key>vendorDetailSPPurposes</key>
+		<string>Usi speciali</string>
+		<key>vendorDetailSPFeatures</key>
+		<string>Caratteristiche speciali</string>
+		<key>vendorDetailPolicy</key>
+		<string>Vedi l&apos;informativa sulla privacy</string>
+		<key>consentToolPartnersFakeIAB</key>
+		<string>Partner non IAB:</string>
+		<key>consentToolPartnersIAB</key>
+		<string>Partner IAB:</string>
+		<key>vendorListGoogleAdsShow</key>
+		<string>Vedi l&apos;elenco dei fornitori di tecnologia pubblicitaria</string>
+		<key>vendorListGoogleAdsLabel</key>
+		<string>Fornitori di tecnologia pubblicitaria</string>
+		<key>legitimateUses</key>
+		<string>Usi legittimi</string>
+	</dict>
+	<key>dataManagement</key>
+	<dict>
+		<key>dataManagementTitle</key>
+		<string>Richiesta di accesso dell&apos;interessato</string>
+		<key>dataManagementSubtitle</key>
+		<string>Gestisci i tuoi dati personali presso partner esterni</string>
+		<key>dataManagementDataAccess</key>
+		<string>Accesso ai dati</string>
+		<key>dataManagementDataAccessDescription</key>
+		<string>Puoi ricevere i tuoi dati (personali o meno) raccolti dai nostri diretti titolari e responsabili del trattamento</string>
+		<key>dataManagementRectifyData</key>
+		<string>Rettifica i dati</string>
+		<key>dataManagementRectifyDataDescriptionOne</key>
+		<string>Una volta ricevuti i tuoi dati, hai il diritto di rettificarli qualora fossero incompleti o inesatti</string>
+		<key>dataManagementRectifyDataDescriptionTwo</key>
+		<string>Ti preghiamo di comunicarci l&apos;indirizzo email a cui vuoi che vengano inviati i dati tramite il campo qui sopra. Riceverai un&apos;email nei prossimi giorni. L&apos;indirizzo email verr‡ cancellato dai nostri sistemi dopo che questo processo sar‡ completato.</string>
+		<key>dataManagementRectifyDataEmailHint</key>
+		<string>Il tuo indirizzo email</string>
+		<key>dataManagementRequestInformation</key>
+		<string>Richiedi informazioni</string>
+		<key>dataManagementOptOut</key>
+		<string>Optout / Cancella</string>
+		<key>dataManagementOptInDescription</key>
+		<string>Se desideri esercitare il \&quot;diritto all&apos;oblio\&quot;, tutti i dati che abbiamo raccolto relativi al tuo device ID verranno cancellati.</string>
+		<key>dataManagementRequestDeletion</key>
+		<string>Richiedi cancellazione</string>
+		<key>dataManagementNoSelectionError</key>
+		<string>Scegliere una delle due opzioni.</string>
+		<key>dataManagementOptoutMessage</key>
+		<string>Il tuo status sarà impostato come &apos;opt-out&apos;. La raccolta e il processo dei dati sarà interrotto. Non riceverai più alcun annuncio personalizzato o basato sulla tua navigazione circoscritto a questa raccolta e processo dei dati.</string>
+		<key>dataManagementRequestInformationMessage</key>
+		<string>Grazie per la tua richiesta! Riceverai un&apos;email entro i prossimi 30 giorni. Dopo che i tuoi dati saranno stati cancellati, il tuo indirizzo e-mail sarà esso stesso eliminato dai nostri sistemi il prima possibile.</string>
+		<key>dataManagementSubmissionError</key>
+		<string>Si è verificato un errore, controlla la connessione a Internet o riprova più tardi.</string>
+		<key>warningTitle</key>
+		<string>Avvertimento</string>
+		<key>infoOkButtonTitle</key>
+		<string>Ok</string>
+	</dict>
+	<key>consentToolColorPalette</key>
+	<dict>
+		<key>primaryBackground</key>
+		<string>ffffff</string>
+		<key>secondaryBackground</key>
+		<string>7021FF</string>
+		<key>primaryText</key>
+		<string>000000</string>
+		<key>secondaryText</key>
+		<string>000000</string>
+	</dict>
+	<key>consentToolCloseButton</key>
+	<dict>
+		<key>closeSrcImage</key>
+		<string>icon-close</string>
+		<key>closeResizeWidht</key>
+		<string>40</string>
+		<key>closeResizeHeight</key>
+		<string>40</string>
+		<key>closeConstaintTop</key>
+		<string>10</string>
+		<key>closeConstaintTrailing</key>
+		<string>10</string>
+	</dict>
+</dict>
+</plist>

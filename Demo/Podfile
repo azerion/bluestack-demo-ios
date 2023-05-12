@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.2'
+
+
+load 'BlueStackDuplicatedFrameworksRemover.rb'
+
+
+target 'MNG-Ads-SDK-Demo' do
+  
+   pod 'MAdvertiseCMP' ,'64'
+#   pod "MAdvertiseCMP"  ,:path => "../../BlueStackMAdvertiseCMP"
+   pod 'Firebase/Crashlytics' ,'8.11.0'
+   pod 'Firebase/Analytics' ,'8.11.0'
+   inherit! :search_paths
+   use_frameworks!
+   pod "BlueStack-SDK" ,'4.2.5' ,:subspecs => ["Full","MAdvertiseLocation"]
+#     pod "BlueStack-SDK"  ,:subspecs => ["Full","MAdvertiseLocation"],:path => "../../"
+
+end
+
+
+post_install do |installer|
+    remove_duplicated_frameworks('Pods-MNG-Ads-SDK-Demo', installer)
+end

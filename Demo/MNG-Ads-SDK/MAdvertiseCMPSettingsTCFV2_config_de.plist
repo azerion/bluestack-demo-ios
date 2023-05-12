@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consentToolManagement</key>
+	<dict>
+		<key>consentManagementStoredData</key>
+		<string>Verwalten Sie Ihre gespeicherten persönlichen Daten</string>
+		<key>consentManagementVendorsButtonTitle</key>
+		<string>Siehe die Liste der Anbieter</string>
+		<key>consentManagementPublisherName</key>
+		<string>MAdvertise-Demo</string>
+		<key>vendorPurposeAccepted</key>
+		<string>Akzeptieren</string>
+		<key>vendorPurposeDenied</key>
+		<string>Ablehnen</string>
+		<key>vendorListHeaderTitle</key>
+		<string>UNTERNEHMEN</string>
+		<key>vendorEmptyFields</key>
+		<string>Keine</string>
+		<key>consentManagementAcceptAllButtonTitle</key>
+		<string>Allem  Zustimmen</string>
+		<key>consentManagementRejectAllButtonTitle</key>
+		<string>Alle ablehnen</string>
+		<key>vendorDetailPurposes</key>
+		<string>Verarbeitungszweck</string>
+		<key>vendorDetailFeatures</key>
+		<string>Funktionen</string>
+		<key>vendorListSorted</key>
+		<true/>
+		<key>vendorDetailSPPurposes</key>
+		<string>Besondere Verwendungszwecke</string>
+		<key>vendorDetailSPFeatures</key>
+		<string>Besondere Merkmale</string>
+		<key>vendorDetailPolicy</key>
+		<string>Siehe die Datenschutzrichtlinie</string>
+		<key>consentToolPartnersFakeIAB</key>
+		<string>Nicht IAB Partner:</string>
+		<key>consentToolPartnersIAB</key>
+		<string>IAB Partner:</string>
+		<key>vendorListGoogleAdsShow</key>
+		<string>Siehe Liste der Werbetechnologielieferanten</string>
+		<key>vendorListGoogleAdsLabel</key>
+		<string>Anbieter von Werbetechnologien</string>
+		<key>legitimateUses</key>
+		<string>Legitime Verwendungen</string>
+	</dict>
+	<key>dataManagement</key>
+	<dict>
+		<key>dataManagementTitle</key>
+		<string>Datenauskunft</string>
+		<key>dataManagementSubtitle</key>
+		<string>Verwaltung der extern gespeicherten Daten</string>
+		<key>dataManagementDataAccess</key>
+		<string>Datenauskunft</string>
+		<key>dataManagementDataAccessDescription</key>
+		<string>Sie können hier ihre personen- und nichtpersonenbezogenen Daten, die gespeichert und verarbeitet werden, abfragen.</string>
+		<key>dataManagementRectifyData</key>
+		<string>Daten korrigieren</string>
+		<key>dataManagementRectifyDataDescriptionOne</key>
+		<string>Insofern Sie einmal ihre Daten eingesehen haben, können Sie hier unvollständige oder falsche Daten berichtigen lassen.</string>
+		<key>dataManagementRectifyDataDescriptionTwo</key>
+		<string>Bitte geben Sie im obigen Feld eine E-Mail-Adresse ein, an welche die Daten gesendet werden sollen. Sie erhalten in den nächsten Tagen eine Auskunft. Die E-Mail-Adresse wird nach diesem Vorgang in unserem System gelöscht.</string>
+		<key>dataManagementRectifyDataEmailHint</key>
+		<string>Ihre E-Mail Adresse</string>
+		<key>dataManagementRequestInformation</key>
+		<string>Daten Anfragen</string>
+		<key>dataManagementOptOut</key>
+		<string>Optout / Löschung</string>
+		<key>dataManagementOptInDescription</key>
+		<string>Wenn Sie den &apos;Optout&apos; ausüben möchten, werden alle Daten, die wir zu Ihrer Geräte-ID gespeichert haben, gelöscht.</string>
+		<key>dataManagementRequestDeletion</key>
+		<string>Löschung Ihrer Daten</string>
+		<key>dataManagementNoSelectionError</key>
+		<string>Wählen Sie eine der beiden Möglichkeiten.</string>
+		<key>dataManagementOptoutMessage</key>
+		<string>Ihr Status wird neu als \&quot;Opt Out\&quot; gesetzt und die Datenspeicherung und Weitergabe wird beendet werden. Anschließend werden Sie keine personalisierte Werbung mehr erhalten.</string>
+		<key>dataManagementRequestInformationMessage</key>
+		<string>Danke für Ihre Anfrage! Sie werden innerhalb der nächsten 30 Tage eine Auskunft erhalten. Danach wird ihre E-mail Adresse aus unserem System gelöscht werden.</string>
+		<key>dataManagementSubmissionError</key>
+		<string>Ein Fehler ist aufgetreten, bitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es später noch einmal.</string>
+		<key>warningTitle</key>
+		<string>Warnung</string>
+		<key>infoOkButtonTitle</key>
+		<string>Ok</string>
+	</dict>
+	<key>consentToolColorPalette</key>
+	<dict>
+		<key>primaryBackground</key>
+		<string>ffffff</string>
+		<key>secondaryBackground</key>
+		<string>7021FF</string>
+		<key>primaryText</key>
+		<string>000000</string>
+		<key>secondaryText</key>
+		<string>000000</string>
+	</dict>
+	<key>consentToolCloseButton</key>
+	<dict>
+		<key>closeSrcImage</key>
+		<string>icon-close</string>
+		<key>closeResizeWidht</key>
+		<string>40</string>
+		<key>closeResizeHeight</key>
+		<string>40</string>
+		<key>closeConstaintTop</key>
+		<string>10</string>
+		<key>closeConstaintTrailing</key>
+		<string>10</string>
+	</dict>
+</dict>
+</plist>

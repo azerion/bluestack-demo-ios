@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  MNG-Ads-SDK-Demo
+//
+//  Created by Ben Salah Med Amine on 4/2/15.
+//  Copyright (c) 2015 MNG. All rights reserved.
+//
+
+#ifndef MNG_Ads_SDK_Demo_PrefixHeader_pch
+#define MNG_Ads_SDK_Demo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AppDelegate.h"
+#import <BlueStackSDK/MNGAdsSDKFactory.h>
+#import "MNGAdsConfig.h"
+#import "MNGAdsAppId.h"
+#import "InterstitialManager.h"
+#import "Utils.h"
+
+#define APP_DELEGATE ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#endif

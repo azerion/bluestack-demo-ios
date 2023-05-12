@@ -1,0 +1,489 @@
+//
+//  DFPDemoViewController.m
+//  DFPAdapter
+//
+//  Created by MacBook Pro on 01/10/2019.
+//  Copyright © 2019 MacBook Pro. All rights reserved.
+//
+
+#import "DFPDemoViewController.h"
+#import "GADBlueStackMediationAdapter.h"
+#import "BlueStackGADAdNetworkExtras.h"
+
+#import "GAdNativeAdBluestack.h"
+
+@interface DFPDemoViewController ()<CLLocationManagerDelegate,GADFullScreenContentDelegate,GADBannerViewDelegate,GADAdLoaderDelegate,GADNativeAdLoaderDelegate,GADNativeAdDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *interBtn;
+@property(nonatomic, strong) GADInterstitialAd *interstitial;
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+@property (weak, nonatomic) IBOutlet GADBannerView *sqaureView;
+@property(nonatomic, strong) GADRewardedAd *rewardedAd;
+
+
+
+@end
+@implementation DFPDemoViewController{
+    GADAdLoader* adLoader;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    self.nativeAdPlaceholder.hidden = YES;
+}
+
+- (void)requestInterstitial {
+     [self resetAds];
+
+    [GADBlueStackMediationAdapter setViewController:[APP_DELEGATE drawerViewController]];
+    
+    GADRequest* request = [GADRequest request];
+    BlueStackGADAdNetworkExtras * extras = [[BlueStackGADAdNetworkExtras alloc] init];
+    extras.keywords = @"target=mngadsdemo;version=4.0.0";
+    extras.customTargetingBlueStack = @{@"age" :@"25"};
+    [request registerAdNetworkExtras:extras];
+
+    [GADInterstitialAd loadWithAdUnitID:INTERSTITIEL_AD_ADUNIT
+                                 request:request
+                      completionHandler:^(GADInterstitialAd *interstitialAd, NSError *error) {
+        if (error) {
+          NSLog(@"Failed to load an interstitial ad with error: %@", error.localizedDescription);
+          return;
+        }
+
+            self.interstitial = interstitialAd;
+            self.interstitial.fullScreenContentDelegate = self;
+            if (self.interstitial != nil && [self.interstitial canPresentFromRootViewController:[APP_DELEGATE drawerViewController] error:nil] ) {
+                [_interBtn setTitle:@"Show Interstitial" forState:UIControlStateNormal];
+            }else{
+                [_interBtn setTitle:@"Load Interstitial" forState:UIControlStateNormal];
+            }
+       
+    }];
+
+   
+}
+
+#pragma mark -Create Interstitiel
+
+- (IBAction)createInterstitiel:(UIButton *)sender {
+    self.nativeAdPlaceholder.hidden = YES;
+
+    if (self.interstitial != nil && [self.interstitial canPresentFromRootViewController:[APP_DELEGATE drawerViewController] error:nil] ) {
+        [self.interstitial presentFromRootViewController:[APP_DELEGATE drawerViewController]];
+    } else {
+        [self requestInterstitial];
+    }
+    
+}
+
+#pragma mark GADInterstitialDelegate implementation
+
+
+/// Tells the delegate that an impression has been recorded for the ad.
+- (void)adDidRecordImpression:(nonnull id<GADFullScreenPresentingAd>)ad{
+    
+}
+
+/// Tells the delegate that a click has been recorded for the ad.
+- (void)adDidRecordClick:(nonnull id<GADFullScreenPresentingAd>)ad{
+    [Utils displayToastWithMessage:@"NativeAd  GADFullScreenPresentingAd"];
+
+}
+
+
+/// Tells the delegate that the ad will present full screen content.
+- (void)adWillPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad{
+    
+}
+
+/// Tells the delegate that the ad will dismiss full screen content.
+- (void)adWillDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad{
+    self.interstitial = nil;
+    [_interBtn setTitle:@"Load Interstitial" forState:UIControlStateNormal];
+}
+
+
+#pragma mark -Create Banner
+
+- (void)resetAds {
+    self.nativeAdPlaceholder.hidden = YES;
+//    _bannerView = nil;
+//    _sqaureView = nil;
+    self.interstitial = nil;
+}
+
+- (IBAction)createBanner:(UIButton *)sender {
+    //hide Native View
+    [self resetAds];
+    NSLog(@"createBanner");
+    [self requestBanner];
+    
+}
+
+- (GADRequest *)setupRequestBannerSquare {
+
+    //  create Dfp Request
+    GADRequest* request = [GADRequest request];
+    BlueStackGADAdNetworkExtras * extras = [[BlueStackGADAdNetworkExtras alloc] init];
+    extras.keywords = @"target=mngadsdemo;version=4.0.0";
+    extras.customTargetingBlueStack = @{ @"age" :@"25",@"consent" :@"test",@"gender" :@"test2"};
+    [request registerAdNetworkExtras:extras];
+    
+    return request;
+}
+
+- (void)requestBanner {
+    GADRequest * request = [self setupRequestBannerSquare] ;
+    //create banner
+    
+    _bannerView.adUnitID = BANNER_AD_ADUNIT;
+    _bannerView.delegate = self;
+    _bannerView.rootViewController = self;
+    _bannerView.adSize = GADAdSizeBanner;
+    [_bannerView loadRequest:request];
+}
+- (IBAction)createSqaure:(id)sender {
+    GADRequest * request = [self setupRequestBannerSquare] ;
+    //create Sqaure
+    NSLog(@"createSqaure");
+
+    _sqaureView.adUnitID = SQUARE_AD_ADUNIT;
+    _sqaureView.delegate = self;
+    _sqaureView.rootViewController = self;
+    _sqaureView.adSize = GADAdSizeMediumRectangle;
+    [_sqaureView loadRequest:request];
+}
+
+/// Tells the delegate that a click has been recorded for the ad.
+- (void)bannerViewDidRecordClick:(nonnull GADBannerView *)bannerView{
+    [Utils displayToastWithMessage:@"NativeAd  bannerViewDidRecordClick"];
+
+}
+
+#pragma mark - GADCustomEventBannerDelegate Delegate Methods
+
+
+- (void)bannerViewDidReceiveAd:(nonnull GADBannerView *)bannerView{
+    
+    if (GADAdSizeEqualToSize(bannerView.adSize,GADAdSizeMediumRectangle)) {
+        _sqaureView = bannerView;
+    }else{
+        _bannerView = bannerView;
+    }
+   
+   
+}
+
+/// Tells the delegate that an ad request failed. The failure is normally due to network
+/// connectivity or ad availablility (i.e., no fill).
+- (void)bannerView:(nonnull GADBannerView *)bannerView
+didFailToReceiveAdWithError:(nonnull NSError *)error{
+  
+}
+
+/// Tells the delegate that an impression has been recorded for an ad.
+- (void)bannerViewDidRecordImpression:(nonnull GADBannerView *)bannerView{
+    
+}
+
+#pragma mark Click-Time Lifecycle Notifications
+
+/// Tells the delegate that a full screen view will be presented in response to the user clicking on
+/// an ad. The delegate may want to pause animations and time sensitive interactions.
+- (void)bannerViewWillPresentScreen:(nonnull GADBannerView *)bannerView{
+   
+}
+
+/// Tells the delegate that the full screen view will be dismissed.
+- (void)bannerViewWillDismissScreen:(nonnull GADBannerView *)bannerView{
+    
+}
+
+/// Tells the delegate that the full screen view has been dismissed. The delegate should restart
+/// anything paused while handling bannerViewWillPresentScreen:.
+- (void)bannerViewDidDismissScreen:(nonnull GADBannerView *)bannerView{
+    
+}
+- (void)adViewDidReceiveAd:(nonnull GADBannerView *)bannerView{
+    
+}
+
+
+
+#pragma mark -Create NativeAd
+- (IBAction)createNativeAd:(UIButton *)sender {
+    [self resetAds];
+
+    [GADBlueStackMediationAdapter setViewController:[APP_DELEGATE drawerViewController]];
+    GADNativeAdImageAdLoaderOptions *adViewOptions = [[GADNativeAdImageAdLoaderOptions alloc] init];
+    adViewOptions.shouldRequestMultipleImages = NO;
+    adViewOptions.disableImageLoading = NO;
+
+    adLoader = [[GADAdLoader alloc] initWithAdUnitID: NATIVE_AD_ADUNIT rootViewController:self adTypes:@[GADAdLoaderAdTypeNative] options:@[adViewOptions]];
+    adLoader.delegate = self;
+
+    GADRequest* request = [GADRequest request];
+
+    BlueStackGADAdNetworkExtras * extras = [[BlueStackGADAdNetworkExtras alloc] init];
+    extras.keywords = @"target=mngadsdemo;version=4.0.0";
+    extras.customTargetingBlueStack = @{ @"age" :@"25"};
+
+    [request registerAdNetworkExtras:extras];
+    [adLoader loadRequest:request];
+    
+}
+
+- (void)replaceNativeAdView:(UIView *)nativeAdView inPlaceholder:(UIView *)placeholder {
+  // Remove anything currently in the placeholder.
+  NSArray *currentSubviews = [placeholder.subviews copy];
+  for (UIView *subview in currentSubviews) {
+    [subview removeFromSuperview];
+  }
+
+  if (!nativeAdView) {
+    return;
+  }
+
+  // Add new ad view and set constraints to fill its container.
+  [placeholder addSubview:nativeAdView];
+  nativeAdView.translatesAutoresizingMaskIntoConstraints = NO;
+
+  NSDictionary *viewDictionary = NSDictionaryOfVariableBindings(nativeAdView);
+  [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[nativeAdView]|"
+                                                                    options:0
+                                                                    metrics:nil
+                                                                      views:viewDictionary]];
+  [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[nativeAdView]|"
+                                                                    options:0
+                                                                    metrics:nil
+                                                                      views:viewDictionary]];
+}
+#pragma mark - Native Ad Delegates
+/// Called when adLoader fails to load an ad.
+- (void)adLoader:(nonnull GADAdLoader *)adLoader
+    didFailToReceiveAdWithError:(nonnull NSError *)error{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    self.nativeAdPlaceholder.hidden = YES;
+
+}
+/// Called after adL-oader has finished loading.
+- (void)adLoaderDidFinishLoading:(nonnull GADAdLoader *)adLoader{
+
+}
+
+- (void)adLoader:(nonnull GADAdLoader *)adLoader didReceiveNativeAd:(nonnull GADNativeAd *)nativeAd{
+    self.nativeAdPlaceholder.hidden = NO;
+    // Create and place ad in view hierarchy.
+    GAdNativeAdBluestack *nativeAdView =
+        [[NSBundle mainBundle] loadNibNamed:@"GAdNativeAdBluestack" owner:nil options:nil]
+            .firstObject;
+
+    nativeAdView.nativeAd = nativeAd;
+    UIView *placeholder = self.nativeAdPlaceholder;
+    ;
+
+    [self replaceNativeAdView:nativeAdView inPlaceholder:placeholder];
+    nativeAdView.mediaView.contentMode = UIViewContentModeScaleAspectFill;
+    nativeAdView.mediaView.hidden = NO;
+    [nativeAdView.mediaView setMediaContent:nativeAd.mediaContent];
+    // Populate the native ad view with the native ad assets.
+    // Some assets are guaranteed to be present in every native ad.
+    ((UILabel *)nativeAdView.headlineView).text = nativeAd.headline;
+    ((UILabel *)nativeAdView.bodyView).text = nativeAd.body;
+    [((UIButton *)nativeAdView.callToActionView) setTitle:nativeAd.callToAction
+                                                 forState:UIControlStateNormal];
+
+    // These assets are not guaranteed to be present, and should be checked first.
+    ((UIImageView *)nativeAdView.iconView).image = nativeAd.icon.image;
+    if (nativeAd.icon != nil) {
+      nativeAdView.iconView.hidden = NO;
+    } else {
+      nativeAdView.iconView.hidden = YES;
+    }
+    ((UIImageView *)nativeAdView.starRatingView).image = [self imageForStars:nativeAd.starRating];
+    if (nativeAd.starRating) {
+      nativeAdView.starRatingView.hidden = NO;
+    } else {
+      nativeAdView.starRatingView.hidden = YES;
+    }
+
+    ((UILabel *)nativeAdView.storeView).text = nativeAd.store;
+    if (nativeAd.store) {
+      nativeAdView.storeView.hidden = NO;
+    } else {
+      nativeAdView.storeView.hidden = YES;
+    }
+
+    ((UILabel *)nativeAdView.priceView).text = nativeAd.price;
+    if (nativeAd.price) {
+      nativeAdView.priceView.hidden = NO;
+    } else {
+      nativeAdView.priceView.hidden = YES;
+    }
+
+    ((UILabel *)nativeAdView.advertiserView).text = nativeAd.advertiser;
+    if (nativeAd.advertiser) {
+      nativeAdView.advertiserView.hidden = NO;
+    } else {
+      nativeAdView.advertiserView.hidden = YES;
+    }
+
+    // In order for the SDK to process touch events properly, user interaction should be disabled.
+    nativeAdView.callToActionView.userInteractionEnabled = NO;
+}
+/// Gets an image representing the number of stars. Returns nil if rating is less than 3.5 stars.
+- (UIImage *)imageForStars:(NSDecimalNumber *)numberOfStars {
+  double starRating = numberOfStars.doubleValue;
+  if (starRating >= 5) {
+    return [UIImage imageNamed:@"stars_5"];
+  } else if (starRating >= 4.5) {
+    return [UIImage imageNamed:@"stars_4_5"];
+  } else if (starRating >= 4) {
+    return [UIImage imageNamed:@"stars_4"];
+  } else if (starRating >= 3.5) {
+    return [UIImage imageNamed:@"stars_3_5"];
+  } else {
+    return nil;
+  }
+}
+/// Called when an impression is recorded for an ad. Only called for Google ads and is not supported
+/// for mediated ads.
+- (void)nativeAdDidRecordImpression:(nonnull GADNativeAd *)nativeAd{
+    
+}
+
+/// Called when a click is recorded for an ad. Only called for Google ads and is not supported for
+/// mediated ads.
+- (void)nativeAdDidRecordClick:(nonnull GADNativeAd *)nativeAd{
+
+}
+
+#pragma mark - Click-Time Lifecycle Notifications
+
+/// Called before presenting the user a full screen view in response to an ad action. Use this
+/// opportunity to stop animations, time sensitive interactions, etc.
+///
+/// Normally the user looks at the ad, dismisses it, and control returns to your application with
+/// the nativeAdDidDismissScreen: message. However, if the user hits the Home button or clicks on an
+/// App Store link, your application will be backgrounded. The next method called will be the
+/// applicationWillResignActive: of your UIApplicationDelegate object.
+- (void)nativeAdWillPresentScreen:(nonnull GADNativeAd *)nativeAd{
+    
+}
+
+#pragma mark - Rewarded video
+
+- (void)requestRewarded {
+    [self resetAds];
+    [GADBlueStackMediationAdapter setViewController:[APP_DELEGATE drawerViewController]];
+    GADRequest* request = [GADRequest request];
+    BlueStackGADAdNetworkExtras * extras = [[BlueStackGADAdNetworkExtras alloc] init];
+    extras.keywords = @"target=mngadsdemo;version=4.0.0";
+    extras.customTargetingBlueStack = @{@"age" :@"25"};
+    [request registerAdNetworkExtras:extras];
+    
+    [GADRewardedAd
+     loadWithAdUnitID:REWARD_AD_ADUNIT
+     request:request
+     completionHandler:^(GADRewardedAd *ad, NSError *error) {
+        if (error) {
+            // Handle ad failed to load case.
+            NSLog(@"Rewarded ad failed to load with error: %@", error.localizedDescription);
+            return;
+        }
+        // Ad successfully loaded.
+        NSLog(@"Rewarded ad loaded.");
+        self.rewardedAd = ad;
+        self.rewardedAd.fullScreenContentDelegate = self;
+        if (self.rewardedAd != nil && [self.rewardedAd canPresentFromRootViewController:[APP_DELEGATE drawerViewController] error:nil] ) {
+            [_rewardBtn setTitle:@"Show RewardVideo" forState:UIControlStateNormal];
+        }else{
+            [_rewardBtn setTitle:@"Load RewardVideo" forState:UIControlStateNormal];
+        }
+    }];
+}
+
+- (IBAction)createRewardVideo:(id)sender {
+
+    if (self.rewardedAd != nil && [self.rewardedAd canPresentFromRootViewController:[APP_DELEGATE drawerViewController] error:nil] ) {
+      [self.rewardedAd presentFromRootViewController:[APP_DELEGATE drawerViewController]
+                            userDidEarnRewardHandler:^{
+        GADAdReward *reward = self.rewardedAd.adReward;
+        NSString *rewardMessage =
+            [NSString stringWithFormat:@"Reward received with currency %@ , amount %lf", reward.type,
+                                       [reward.amount doubleValue]];
+        NSLog(@"%@", rewardMessage);
+          [Utils displayToastWithMessage:rewardMessage];
+      }];
+    } else {
+      NSLog(@"Ad wasn't ready");
+      [self requestRewarded];
+    }
+}
+#pragma mark GADFullScreenContentDelegate implementation
+
+- (void)ad:(nonnull id<GADFullScreenPresentingAd>)ad
+didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
+
+    NSLog(@"Ad failed to present full screen content with error %@.", [error localizedDescription]);
+ 
+    
+    NSString *fullScreenAdType = @"Full screen ad";;
+      if ([ad isKindOfClass:[GADInterstitialAd class]]) {
+          fullScreenAdType =  @"Interstitial ad";
+              if (self.interstitial != nil && [self.interstitial canPresentFromRootViewController:self error:nil] ) {
+                  [_interBtn setTitle:@"Show Interstitial" forState:UIControlStateNormal];
+              }else{
+                  [_interBtn setTitle:@"Load Interstitial" forState:UIControlStateNormal];
+              }
+          
+      }
+      if ([ad isKindOfClass:[GADRewardedAd class]]) {
+              if (self.rewardedAd != nil && [self.rewardedAd canPresentFromRootViewController:self error:nil] ) {
+                  [_rewardBtn setTitle:@"Show RewardVideo" forState:UIControlStateNormal];
+              }else{
+                  [_rewardBtn setTitle:@"Load RewardVideo" forState:UIControlStateNormal];
+              }
+      }
+}
+
+/// Tells the delegate that the ad presented full screen content.
+- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+  NSString *fullScreenAdType = [self getFullScreenAdType:ad];
+  NSLog(@"%@ did present full screen content.", fullScreenAdType);
+}
+
+/// Tells the delegate that the ad dismissed full screen content.
+- (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+  NSString *fullScreenAdType = @"Full screen ad";;
+    if ([ad isKindOfClass:[GADInterstitialAd class]]) {
+        fullScreenAdType =  @"Interstitial ad";
+        self.interstitial = nil;
+        [_interBtn setTitle:@"Load Interstitial" forState:UIControlStateNormal];
+    }
+    if ([ad isKindOfClass:[GADRewardedAd class]]) {
+        fullScreenAdType =  @"Rewarded ad";
+        self.rewardedAd = nil;
+        [_rewardBtn setTitle:@"Load Reward Video" forState:UIControlStateNormal];
+    }
+}
+
+- (NSString *)getFullScreenAdType:(nonnull id<GADFullScreenPresentingAd>)ad {
+  if ([ad isKindOfClass:[GADInterstitialAd class]]) {
+    return @"Interstitial ad";
+  }
+  if ([ad isKindOfClass:[GADRewardedAd class]]) {
+    return @"Rewarded ad";
+  }
+  return @"Full screen ad";
+}
+
+#pragma mark - open menu
+- (IBAction)OpenMenuTapped:(id)sender {
+    [[APP_DELEGATE drawerViewController]openMenu];
+}
+
+
+@end

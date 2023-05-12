@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFPDemoViewController">
+            <connections>
+                <outlet property="bannerView" destination="bxM-vs-V6B" id="Wso-fv-eLt"/>
+                <outlet property="interBtn" destination="IvT-Qi-dPh" id="g8C-1i-89z"/>
+                <outlet property="nativeAdPlaceholder" destination="Fwr-u3-Hw8" id="NWd-ht-HzU"/>
+                <outlet property="rewardBtn" destination="Rvq-zl-Cfr" id="HCU-yy-sth"/>
+                <outlet property="sqaureView" destination="ciO-VR-lPh" id="VbF-pk-Sya"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPJ-Qr-dLE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoogleMobileAds Adapter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkQ-SZ-Jnu">
+                            <rect key="frame" x="106.66666666666669" y="20" width="201" height="80"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAg-Hn-lht">
+                            <rect key="frame" x="0.0" y="49" width="49" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="693-cy-RCA"/>
+                                <constraint firstAttribute="width" constant="49" id="nJl-vQ-O3Z"/>
+                            </constraints>
+                            <state key="normal" image="MENU">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="OpenMenuTapped:" destination="-2" eventType="touchUpInside" id="b11-va-fRV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="EvL-1G-jG7"/>
+                        <constraint firstItem="HAg-Hn-lht" firstAttribute="leading" secondItem="wPJ-Qr-dLE" secondAttribute="leading" id="JG9-8D-CN1"/>
+                        <constraint firstAttribute="bottom" secondItem="IkQ-SZ-Jnu" secondAttribute="bottom" id="XaG-ew-uVy"/>
+                        <constraint firstItem="HAg-Hn-lht" firstAttribute="centerY" secondItem="IkQ-SZ-Jnu" secondAttribute="centerY" id="akc-eJ-kN2"/>
+                        <constraint firstItem="IkQ-SZ-Jnu" firstAttribute="top" secondItem="wPJ-Qr-dLE" secondAttribute="top" constant="20" id="ubh-fs-VMc"/>
+                        <constraint firstItem="IkQ-SZ-Jnu" firstAttribute="centerX" secondItem="wPJ-Qr-dLE" secondAttribute="centerX" id="z2z-Rk-gQp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMV-S9-DYP">
+                    <rect key="frame" x="0.0" y="100" width="414" height="150"/>
+                    <subviews>
+                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpq-CM-Ruq">
+                            <rect key="frame" x="0.0" y="10" width="206.66666666666666" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="0OV-3Q-aZc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <state key="normal" title="Banner">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.2498216331" green="0.36989206079999998" blue="0.36364993449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="createBanner:" destination="-2" eventType="touchUpInside" id="pDx-o4-wX1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm1-7l-PkB">
+                            <rect key="frame" x="207.66666666666663" y="10" width="206.33333333333337" height="42"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <state key="normal" title="Native Ad">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.2498216331" green="0.36989206079999998" blue="0.36364993449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="createNativeAd:" destination="-2" eventType="touchUpInside" id="2zk-FZ-P9g"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elO-Im-IrY">
+                            <rect key="frame" x="206.66666666666666" y="0.0" width="1" height="106"/>
+                            <color key="backgroundColor" red="0.4909583032" green="0.84145212170000006" blue="0.82050025459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="2Ka-rX-HwD"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvT-Qi-dPh">
+                            <rect key="frame" x="8" y="62" width="187" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="UgD-ED-FkU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Load Interstitial">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.2498216331" green="0.36989206079999998" blue="0.36364993449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="createInterstitiel:" destination="-2" eventType="touchUpInside" id="tka-KB-hrR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-EY-2SA">
+                            <rect key="frame" x="217.66666666666663" y="62" width="186.33333333333337" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Hbq-lS-d8g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <state key="normal" title="Square">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.2498216331" green="0.36989206079999998" blue="0.36364993449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="createSqaure:" destination="-1" eventType="touchUpInside" id="L8z-Uv-09j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvq-zl-Cfr">
+                            <rect key="frame" x="114" y="108" width="186" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="NwY-ha-7LH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Load Reward Video">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.2498216331" green="0.36989206079999998" blue="0.36364993449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="createRewardVideo:" destination="-1" eventType="touchUpInside" id="rvd-2W-AeU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="elO-Im-IrY" firstAttribute="top" secondItem="HMV-S9-DYP" secondAttribute="top" id="6Vm-ZZ-9jk"/>
+                        <constraint firstAttribute="trailing" secondItem="3Ip-EY-2SA" secondAttribute="trailing" constant="10" id="73R-3x-QU2"/>
+                        <constraint firstAttribute="height" constant="150" id="82r-0e-7oq"/>
+                        <constraint firstItem="3Ip-EY-2SA" firstAttribute="leading" secondItem="elO-Im-IrY" secondAttribute="trailing" constant="10" id="BKe-6Q-2oN"/>
+                        <constraint firstItem="Mpq-CM-Ruq" firstAttribute="leading" secondItem="HMV-S9-DYP" secondAttribute="leading" id="FaA-Si-sc1"/>
+                        <constraint firstItem="3Ip-EY-2SA" firstAttribute="top" secondItem="IvT-Qi-dPh" secondAttribute="top" id="RjL-zJ-Y95"/>
+                        <constraint firstItem="Rvq-zl-Cfr" firstAttribute="top" secondItem="elO-Im-IrY" secondAttribute="bottom" constant="2" id="URf-bP-C0p"/>
+                        <constraint firstItem="IvT-Qi-dPh" firstAttribute="leading" secondItem="HMV-S9-DYP" secondAttribute="leading" constant="8" id="UoL-sz-FZK"/>
+                        <constraint firstItem="Dm1-7l-PkB" firstAttribute="leading" secondItem="elO-Im-IrY" secondAttribute="trailing" id="W65-bF-5dH"/>
+                        <constraint firstItem="elO-Im-IrY" firstAttribute="centerX" secondItem="HMV-S9-DYP" secondAttribute="centerX" id="dVu-P7-Ex5"/>
+                        <constraint firstAttribute="trailing" secondItem="Dm1-7l-PkB" secondAttribute="trailing" id="h2v-Oy-8aP"/>
+                        <constraint firstItem="IvT-Qi-dPh" firstAttribute="top" secondItem="Mpq-CM-Ruq" secondAttribute="bottom" constant="10" id="hVp-gK-t1U"/>
+                        <constraint firstItem="Mpq-CM-Ruq" firstAttribute="top" secondItem="Dm1-7l-PkB" secondAttribute="top" id="hWu-QC-Dff"/>
+                        <constraint firstAttribute="bottom" secondItem="Rvq-zl-Cfr" secondAttribute="bottom" id="i88-tv-tka"/>
+                        <constraint firstItem="Dm1-7l-PkB" firstAttribute="top" secondItem="HMV-S9-DYP" secondAttribute="top" constant="10" id="pB7-l7-6zZ"/>
+                        <constraint firstItem="Rvq-zl-Cfr" firstAttribute="centerX" secondItem="HMV-S9-DYP" secondAttribute="centerX" id="pCj-km-npI"/>
+                        <constraint firstItem="elO-Im-IrY" firstAttribute="leading" secondItem="Mpq-CM-Ruq" secondAttribute="trailing" id="qJB-un-yYd"/>
+                        <constraint firstItem="elO-Im-IrY" firstAttribute="leading" secondItem="IvT-Qi-dPh" secondAttribute="trailing" constant="11.666666666666657" id="wu6-Fj-dIB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-VR-lPh" userLabel="sqaure View" customClass="GADBannerView">
+                    <rect key="frame" x="57" y="561" width="300" height="250"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="YgN-kd-zSa"/>
+                        <constraint firstAttribute="width" constant="300" id="jOZ-aL-CR1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-u3-Hw8">
+                    <rect key="frame" x="5" y="268" width="404" height="450"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="dX8-DK-iZF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-vs-V6B" customClass="GADBannerView">
+                    <rect key="frame" x="47" y="821" width="320" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="IA1-Yl-Q7G"/>
+                        <constraint firstAttribute="height" constant="50" id="TNf-1p-Pdf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bxM-vs-V6B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3G6-BN-LH3"/>
+                <constraint firstItem="HMV-S9-DYP" firstAttribute="top" secondItem="wPJ-Qr-dLE" secondAttribute="bottom" id="5kK-YT-Hlu"/>
+                <constraint firstItem="wPJ-Qr-dLE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9RD-oe-Rz2"/>
+                <constraint firstItem="ciO-VR-lPh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AO1-zj-x8P"/>
+                <constraint firstItem="Fwr-u3-Hw8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="EIg-6W-4MX"/>
+                <constraint firstItem="HMV-S9-DYP" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Lnj-Tj-dus"/>
+                <constraint firstItem="Fwr-u3-Hw8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qbu-SZ-TZk"/>
+                <constraint firstItem="wPJ-Qr-dLE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RY2-GT-H4a"/>
+                <constraint firstItem="Fwr-u3-Hw8" firstAttribute="top" secondItem="HMV-S9-DYP" secondAttribute="bottom" constant="18" id="cTS-5h-s2Q"/>
+                <constraint firstAttribute="trailing" secondItem="wPJ-Qr-dLE" secondAttribute="trailing" id="gWI-qo-w4R"/>
+                <constraint firstItem="HMV-S9-DYP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hZv-au-xLn"/>
+                <constraint firstAttribute="trailing" secondItem="Fwr-u3-Hw8" secondAttribute="trailing" constant="5" id="kb4-FV-Y5U"/>
+                <constraint firstAttribute="bottom" secondItem="bxM-vs-V6B" secondAttribute="bottom" constant="25" id="w1H-a1-TUp"/>
+                <constraint firstAttribute="bottom" secondItem="ciO-VR-lPh" secondAttribute="bottom" constant="85" id="zW6-kP-MWP"/>
+            </constraints>
+            <point key="canvasLocation" x="81.159420289855078" y="6.0267857142857144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MENU" width="19" height="14.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "bluestacksdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/azerion/BlueStackSDK",
+      "state" : {
+        "branch" : "main",
+        "revision" : "783345516c672dc718b4ffe64c23707fdb397f7d"
+      }
+    },
+    {
+      "identity" : "madvertisecmp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/azerion/MadvertiseCMP",
+      "state" : {
+        "branch" : "main",
+        "revision" : "be65aa3a8d50aa49ac4b011f49d4e12d0016693a"
+      }
+    }
+  ],
+  "version" : 2
+}

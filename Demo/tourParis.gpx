@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx>
+    <wpt lat="48.85952" lon="2.34795">
+        <time>2016-07-16T00:00:00Z</time>
+        <name>Start near</name>
+        <cmt>Start near 23 Rue St Denis, 75001 Paris-1ER-Arrondissement, France</cmt>
+        <desc>Start near 23 Rue St Denis, 75001 Paris-1ER-Arrondissement, France</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86009" lon="2.34828">
+        <time>2016-07-16T00:00:49Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord sur Rue St Denis vers Rue de la Reynie</cmt>
+        <desc>Prendre la direction nord sur Rue St Denis vers Rue de la Reynie</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86121" lon="2.34887">
+        <time>2016-07-16T00:02:24Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord sur Rue St Denis vers Rue de la Cossonnerie</cmt>
+        <desc>Prendre la direction nord sur Rue St Denis vers Rue de la Cossonnerie</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86215" lon="2.34937">
+        <time>2016-07-16T00:03:44Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Rambuteau vers Rue Pierre Lescot</cmt>
+        <desc>Prendre la direction ouest sur Rue Rambuteau vers Rue Pierre Lescot</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86236" lon="2.34845">
+        <time>2016-07-16T00:04:35Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Rambuteau vers Rue Mondétour</cmt>
+        <desc>Prendre la direction ouest sur Rue Rambuteau vers Rue Mondétour</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86275" lon="2.34669">
+        <time>2016-07-16T00:06:13Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Rambuteau vers Allée André Breton</cmt>
+        <desc>Prendre la direction ouest sur Rue Rambuteau vers Allée André Breton</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86312" lon="2.34528">
+        <time>2016-07-16T00:07:36Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Rambuteau vers Rue du Jour</cmt>
+        <desc>Prendre la direction ouest sur Rue Rambuteau vers Rue du Jour</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86335" lon="2.34418">
+        <time>2016-07-16T00:08:38Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord-ouest sur Rue Rambuteau vers Rue du Jour</cmt>
+        <desc>Prendre la direction nord-ouest sur Rue Rambuteau vers Rue du Jour</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86337" lon="2.34414">
+        <time>2016-07-16T00:08:41Z</time>
+        <name>Prendre  d</name>
+        <cmt>Prendre à droite sur Rue du Jour</cmt>
+        <desc>Prendre à droite sur Rue du Jour</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86415" lon="2.3455">
+        <time>2016-07-16T00:10:16Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord sur Rue Montmartre vers Rue Étienne Marcel</cmt>
+        <desc>Prendre la direction nord sur Rue Montmartre vers Rue Étienne Marcel</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86481" lon="2.34514">
+        <time>2016-07-16T00:11:12Z</time>
+        <name>Prendre  g</name>
+        <cmt>Prendre à gauche sur Rue Étienne Marcel</cmt>
+        <desc>Prendre à gauche sur Rue Étienne Marcel</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86482" lon="2.34508">
+        <time>2016-07-16T00:11:15Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Étienne Marcel vers Rue Jean-Jacques Rousseau</cmt>
+        <desc>Prendre la direction ouest sur Rue Étienne Marcel vers Rue Jean-Jacques Rousseau</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86482" lon="2.34504">
+        <time>2016-07-16T00:11:18Z</time>
+        <name>Prendre  g</name>
+        <cmt>Prendre à gauche sur Rue Jean-Jacques Rousseau</cmt>
+        <desc>Prendre à gauche sur Rue Jean-Jacques Rousseau</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86369" lon="2.3428">
+        <time>2016-07-16T00:13:46Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud-ouest sur Rue Jean-Jacques Rousseau vers Rue Coquillière</cmt>
+        <desc>Prendre la direction sud-ouest sur Rue Jean-Jacques Rousseau vers Rue Coquillière</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86364" lon="2.34273">
+        <time>2016-07-16T00:13:52Z</time>
+        <name>Prendre  d</name>
+        <cmt>Prendre à droite sur Rue Coquillière</cmt>
+        <desc>Prendre à droite sur Rue Coquillière</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.8641" lon="2.34183">
+        <time>2016-07-16T00:14:53Z</time>
+        <name>Prendre  g</name>
+        <cmt>Prendre à gauche sur Rue du Bouloi</cmt>
+        <desc>Prendre à gauche sur Rue du Bouloi</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86409" lon="2.34179">
+        <time>2016-07-16T00:14:55Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud-ouest sur Rue du Bouloi vers Rue du Colonel Driant</cmt>
+        <desc>Prendre la direction sud-ouest sur Rue du Bouloi vers Rue du Colonel Driant</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86375" lon="2.34108">
+        <time>2016-07-16T00:15:41Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud-ouest sur Rue du Bouloi vers Rue du Colonel Driant</cmt>
+        <desc>Prendre la direction sud-ouest sur Rue du Bouloi vers Rue du Colonel Driant</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.8634" lon="2.34038">
+        <time>2016-07-16T00:16:28Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction est sur Rue du Colonel Driant vers Rue Jean-Jacques Rousseau</cmt>
+        <desc>Prendre la direction est sur Rue du Colonel Driant vers Rue Jean-Jacques Rousseau</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86304" lon="2.34191">
+        <time>2016-07-16T00:17:53Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud sur Rue du Louvre vers Rue Adolphe Jullien</cmt>
+        <desc>Prendre la direction sud sur Rue du Louvre vers Rue Adolphe Jullien</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86235" lon="2.3416">
+        <time>2016-07-16T00:18:51Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord sur Rue du Louvre vers Rue Berger</cmt>
+        <desc>Prendre la direction nord sur Rue du Louvre vers Rue Berger</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86238" lon="2.34162">
+        <time>2016-07-16T00:18:54Z</time>
+        <name>Prendre  d</name>
+        <cmt>Prendre à droite sur Rue Berger</cmt>
+        <desc>Prendre à droite sur Rue Berger</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86232" lon="2.34191">
+        <time>2016-07-16T00:19:10Z</time>
+        <name>Tourner lg</name>
+        <cmt>Tourner légèrement à droite pour continuer sur Rue Berger</cmt>
+        <desc>Tourner légèrement à droite pour continuer sur Rue Berger</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86178" lon="2.3443">
+        <time>2016-07-16T00:21:23Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction est sur Rue Berger vers Rue du Pont Neuf</cmt>
+        <desc>Prendre la direction est sur Rue Berger vers Rue du Pont Neuf</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86163" lon="2.34486">
+        <time>2016-07-16T00:21:55Z</time>
+        <name>Rue Berger</name>
+        <cmt>Rue Berger tourne légèrement à droite et devient Rue du Pont Neuf</cmt>
+        <desc>Rue Berger tourne légèrement à droite et devient Rue du Pont Neuf</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86139" lon="2.34502">
+        <time>2016-07-16T00:22:17Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud sur Rue du Pont Neuf vers Place Maurice Quentin</cmt>
+        <desc>Prendre la direction sud sur Rue du Pont Neuf vers Place Maurice Quentin</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86106" lon="2.34489">
+        <time>2016-07-16T00:22:45Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction ouest sur Rue Saint Honoré vers Rue des Prouvaires</cmt>
+        <desc>Prendre la direction ouest sur Rue Saint Honoré vers Rue des Prouvaires</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86118" lon="2.344">
+        <time>2016-07-16T00:23:33Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud sur Rue du Roule vers Rue de Rivoli</cmt>
+        <desc>Prendre la direction sud sur Rue du Roule vers Rue de Rivoli</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86006" lon="2.3434">
+        <time>2016-07-16T00:25:08Z</time>
+        <name>Continuer </name>
+        <cmt>Continuer sur Rue de la Monnaie</cmt>
+        <desc>Continuer sur Rue de la Monnaie</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86001" lon="2.34338">
+        <time>2016-07-16T00:25:13Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord sur Rue de la Monnaie vers Rue de Rivoli</cmt>
+        <desc>Prendre la direction nord sur Rue de la Monnaie vers Rue de Rivoli</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.86006" lon="2.3434">
+        <time>2016-07-16T00:25:17Z</time>
+        <name>Prendre  d</name>
+        <cmt>Prendre à droite sur Rue de Rivoli</cmt>
+        <desc>Prendre à droite sur Rue de Rivoli</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.85962" lon="2.3448">
+        <time>2016-07-16T00:26:39Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction sud-est sur Rue de Rivoli vers Rue Bertin Poirée</cmt>
+        <desc>Prendre la direction sud-est sur Rue de Rivoli vers Rue Bertin Poirée</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.8591" lon="2.34642">
+        <time>2016-07-16T00:28:14Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord-est sur Rue des Lavandières Sainte-Opportune vers Rue du Plat d'Étain</cmt>
+        <desc>Prendre la direction nord-est sur Rue des Lavandières Sainte-Opportune vers Rue du Plat d'Étain</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.85957" lon="2.34686">
+        <time>2016-07-16T00:28:59Z</time>
+        <name>Prendre la</name>
+        <cmt>Prendre la direction nord-est sur Place Sainte-Opportune vers Rue des Halles</cmt>
+        <desc>Prendre la direction nord-est sur Place Sainte-Opportune vers Rue des Halles</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.85967" lon="2.34721">
+        <time>2016-07-16T00:29:20Z</time>
+        <name>Tourner  d</name>
+        <cmt>Tourner à droite pour rester sur Place Sainte-Opportune</cmt>
+        <desc>Tourner à droite pour rester sur Place Sainte-Opportune</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+    <wpt lat="48.85962" lon="2.34732">
+        <time>2016-07-16T00:29:27Z</time>
+        <name>Continuer </name>
+        <cmt>Continuer sur Rue Courtalon</cmt>
+        <desc>Continuer sur Rue Courtalon</desc>
+        <sym>Flag, Blue</sym>
+    </wpt>
+</gpx>
