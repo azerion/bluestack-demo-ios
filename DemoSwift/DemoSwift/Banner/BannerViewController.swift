@@ -80,10 +80,14 @@ class BannerViewController: UIViewController , MNGAdsAdapterBannerDelegate,MNGCl
         bannerFactory.refreshDelegate  = self
         bannerFactory.viewController = self
         
+        var size : MNGAdSize?
+
         if sender.tag == 250 {
             bannerFactory.placementId = "/\(MNG_ADS_APP_ID!)\(DemoSwiftConstants.PLACEMENTS.MNG_ADS_SQUARE_PLACEMENT_ID)"
+            size  = kMNGAdSizeMediumRectangle
         } else {
             bannerFactory.placementId = "/\(MNG_ADS_APP_ID!)\(DemoSwiftConstants.PLACEMENTS.MNG_ADS_BANNER_PLACEMENT_ID)"
+            size = kMNGAdSizeBanner
         }
       
        
@@ -93,7 +97,7 @@ class BannerViewController: UIViewController , MNGAdsAdapterBannerDelegate,MNGCl
         preference.gender = MNGGender.male
         preference.setLocationPreferences(CLLocation.init(latitude: 48.87610, longitude: 10.453), withConsentFlag: 2)
         preference.contentUrl = "your content url"
-        bannerFactory.loadBanner(inFrame: kMNGAdSizeBanner, withPreferences: preference)
+        bannerFactory.loadBanner(inFrame: size!, withPreferences: preference)
         
     }
     

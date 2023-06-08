@@ -57,7 +57,14 @@ class InfeedViewController:  UIViewController , UITableViewDelegate, UITableView
         infeedFactory?.infeedDelegate = self
         infeedFactory?.viewController = self
         let infeedFrame = MAdvertiseInfeedFrame(widthDP: self.view.frame.size.width, andInfeedRatio:INFEED_RATIO_16_9)
-        infeedFactory?.loadInfeed(in: infeedFrame, withPreferences: nil)
+        
+        let preference = MNGPreference.init()
+        preference.age = 25
+        preference.keyWord = "brand=myBrand;category=sport";//Separator in case of multiple entries is ; key=value
+        preference.gender = MNGGender.male
+        preference.setLocationPreferences(CLLocation.init(latitude: 78.88210, longitude: 44.45653), withConsentFlag: 2)
+        preference.contentUrl = "your content url"
+        infeedFactory?.loadInfeed(in: infeedFrame, withPreferences: preference)
     }
     
     

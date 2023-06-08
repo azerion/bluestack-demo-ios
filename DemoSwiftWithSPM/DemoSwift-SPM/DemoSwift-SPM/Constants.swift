@@ -34,7 +34,7 @@ let MNG_ADS_CMPLanguage = UserDefaults.standard.object(forKey: CMP_LANGUAGE) as?
 
 
 public struct DemoSwiftConstants {
-    public static let appID = "3180317"//change it later 
+    public static let appID = "2598284"//change it later 
     
     public static let menuSize = 214
     

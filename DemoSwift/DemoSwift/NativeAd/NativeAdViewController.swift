@@ -57,8 +57,13 @@ class NativeAdViewController: UIViewController , MNGAdsAdapterNativeDelegate, MN
         nativeAdFactory.nativeDelegate = self
         nativeAdFactory.clickDelegate = self
         nativeAdFactory.viewController = self
-        let preferences = MNGPreference.init()
-        nativeAdFactory.loadNative(withPreferences: preferences,withCover:cover)
+        let preference = MNGPreference.init()
+        preference.age = 25
+        preference.keyWord = "brand=myBrand;category=sport";//Separator in case of multiple entries is ; key=value
+        preference.gender = MNGGender.male
+        preference.setLocationPreferences(CLLocation.init(latitude: 38.7563, longitude: 84.2645), withConsentFlag: 2)
+        preference.contentUrl = "your content url"
+        nativeAdFactory.loadNative(withPreferences: preference,withCover:cover)
     }
     
     // MARK: - Buttons Actions

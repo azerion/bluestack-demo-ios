@@ -2,13 +2,13 @@
 platform :ios, '12.2'
 
 use_frameworks!
-load 'BlueStackDuplicatedFrameworksRemover.rb'
+#load 'BlueStackDuplicatedFrameworksRemover.rb'
 
 def common_pods
 
 
     #BlueStack
-    pod "BlueStack-SDK", '4.2.5'
+    pod "BlueStack-SDK", '4.2.6'
     pod "MAdvertiseCMP" ,'64'
   
 end
@@ -16,6 +16,6 @@ end
 target 'DemoSwift' do
   common_pods
 end
-post_install do |installer|
-    remove_duplicated_frameworks('Pods-DemoSwift', installer)
-end
+#post_install do |installer|
+#    remove_duplicated_frameworks('Pods-DemoSwift', installer)
+#end

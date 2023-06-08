@@ -71,7 +71,6 @@
 		E670B21927D74A1900D8844F /* GADBlueStackBannerRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E670B21827D74A1900D8844F /* GADBlueStackBannerRenderer.m */; };
 		E670B21E27D7985D00D8844F /* GADBlueStackMediationAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E670B21D27D7985D00D8844F /* GADBlueStackMediationAdapter.m */; };
 		E670B22127D7A2B700D8844F /* GADBlueStackInterstitialRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E670B22027D7A2B600D8844F /* GADBlueStackInterstitialRenderer.m */; };
-		E6A0F9202823C637000774F8 /* BlueStackDuplicatedFrameworksRemover.rb in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F91F2823C637000774F8 /* BlueStackDuplicatedFrameworksRemover.rb */; };
 		E6BDB78E27DF5055000F8EDD /* GAdNativeAdBluestack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BDB78D27DF5055000F8EDD /* GAdNativeAdBluestack.m */; };
 		E6BDB79427DF5086000F8EDD /* GAdNativeAdBluestack.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6BDB79327DF5086000F8EDD /* GAdNativeAdBluestack.xib */; };
 		E6C927EA285B667A00F4367B /* tourParis.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E6C927E9285B667A00F4367B /* tourParis.gpx */; };
@@ -197,7 +196,6 @@
 		E670B21D27D7985D00D8844F /* GADBlueStackMediationAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADBlueStackMediationAdapter.m; sourceTree = "<group>"; };
 		E670B21F27D7A2B600D8844F /* GADBlueStackInterstitialRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADBlueStackInterstitialRenderer.h; sourceTree = "<group>"; };
 		E670B22027D7A2B600D8844F /* GADBlueStackInterstitialRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADBlueStackInterstitialRenderer.m; sourceTree = "<group>"; };
-		E6A0F91F2823C637000774F8 /* BlueStackDuplicatedFrameworksRemover.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = BlueStackDuplicatedFrameworksRemover.rb; sourceTree = "<group>"; };
 		E6BDB78C27DF5055000F8EDD /* GAdNativeAdBluestack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAdNativeAdBluestack.h; sourceTree = "<group>"; };
 		E6BDB78D27DF5055000F8EDD /* GAdNativeAdBluestack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAdNativeAdBluestack.m; sourceTree = "<group>"; };
 		E6BDB79327DF5086000F8EDD /* GAdNativeAdBluestack.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAdNativeAdBluestack.xib; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 				4125F86B1A36E86D00F6E26C /* MNG-Ads-SDK-Demo */,
 				4125F86A1A36E86D00F6E26C /* Products */,
 				4125F89B1A36F0BC00F6E26C /* Frameworks */,
-				E6A0F91F2823C637000774F8 /* BlueStackDuplicatedFrameworksRemover.rb */,
 				1082300F44E660B62E1C9542 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -487,7 +484,6 @@
 				4125F8651A36E86D00F6E26C /* Sources */,
 				4125F8661A36E86D00F6E26C /* Frameworks */,
 				4125F8671A36E86D00F6E26C /* Resources */,
-				518CE8E7234DDF330000306B /* ShellScript */,
 				23B52CAB40E4514DACC52737 /* [CP] Embed Pods Frameworks */,
 				9B6FA9BB32EACA48A02BC3CB /* [CP] Copy Pods Resources */,
 			);
@@ -569,7 +565,6 @@
 				7211B3EF27037A48006D77F8 /* DFPDemoViewController.xib in Resources */,
 				41886A1F1ACEAED300F32A35 /* InterstitialViewController.xib in Resources */,
 				5155AA0624A4969000C5FBCF /* TestMFViewController.xib in Resources */,
-				E6A0F9202823C637000774F8 /* BlueStackDuplicatedFrameworksRemover.rb in Resources */,
 				E6BDB79427DF5086000F8EDD /* GAdNativeAdBluestack.xib in Resources */,
 				5111CB2725077DF00057DFAA /* MAdvertiseCMPSettingsTCFV2_config_en.plist in Resources */,
 				416FD40F1AB1C825006B3D68 /* MenuViewController.xib in Resources */,
@@ -624,23 +619,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MNG-Ads-SDK-Demo/Pods-MNG-Ads-SDK-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		518CE8E7234DDF330000306B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n\n";
 		};
 		9B6FA9BB32EACA48A02BC3CB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -810,7 +788,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3X5C5YGPN7;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3X5C5YGPN7;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3DT94432UL;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -837,10 +815,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.madvertise.inhouse.bluestack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerion.ads.testapp;
 				PRODUCT_NAME = "BlueStack-Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "Dev Anypli";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_anypli;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Azerion Ads Test Application - Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "MNG-Ads-SDK/MngAds-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -862,7 +840,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PD25VRRWZN;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PD25VRRWZN;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3DT94432UL;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = NO;
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "";
@@ -890,10 +868,10 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.madvertise.inhouse.bluestack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerion.ads.testapp;
 				PRODUCT_NAME = "BlueStack-Demo";
 				PROVISIONING_PROFILE_SPECIFIER = com.madvertise.inhouse.bluestack;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.madvertise.inhouse.bluestack;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Azerion Ads Test Application - Production";
 				SWIFT_OBJC_BRIDGING_HEADER = "MNG-Ads-SDK/MngAds-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
