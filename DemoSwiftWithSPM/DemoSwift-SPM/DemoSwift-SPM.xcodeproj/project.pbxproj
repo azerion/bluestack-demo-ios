@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4173CC2A139571004E96E6 /* BlueStackAdColonyAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173CB2A139571004E96E6 /* BlueStackAdColonyAdapter */; };
+		CB4173CE2A139571004E96E6 /* BlueStackDFPAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173CD2A139571004E96E6 /* BlueStackDFPAdapter */; };
+		CB4173D02A139571004E96E6 /* BlueStackFacebookAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173CF2A139571004E96E6 /* BlueStackFacebookAdapter */; };
+		CB4173D22A139571004E96E6 /* BlueStackImproveAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173D12A139571004E96E6 /* BlueStackImproveAdapter */; };
+		CB4173D42A139571004E96E6 /* BlueStackLocationAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173D32A139571004E96E6 /* BlueStackLocationAdapter */; };
+		CB4173D62A139571004E96E6 /* BlueStackOguryAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173D52A139571004E96E6 /* BlueStackOguryAdapter */; };
+		CB4173D82A139571004E96E6 /* BlueStackSASAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173D72A139571004E96E6 /* BlueStackSASAdapter */; };
+		CB4173DA2A139571004E96E6 /* BlueStackSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173D92A139571004E96E6 /* BlueStackSDK */; };
+		CB4173DC2A139571004E96E6 /* BluestackAmazonPublisherServicesAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173DB2A139571004E96E6 /* BluestackAmazonPublisherServicesAdapter */; };
+		CB4173DE2A139571004E96E6 /* BluestackCriteoAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = CB4173DD2A139571004E96E6 /* BluestackCriteoAdapter */; };
 		E61EBFB729AE0DD30009EE21 /* MAdvertiseCMP in Frameworks */ = {isa = PBXBuildFile; productRef = E61EBFB629AE0DD30009EE21 /* MAdvertiseCMP */; };
 		E64A589929A911F100A73379 /* FourInOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64A583E29A911E300A73379 /* FourInOneViewController.xib */; };
 		E64A589A29A911F100A73379 /* FourInOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A583F29A911E300A73379 /* FourInOneViewController.swift */; };
@@ -57,7 +67,6 @@
 		E64A58D229A911F100A73379 /* ThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A589829A911F100A73379 /* ThumbnailViewController.swift */; };
 		E64A58D429A9139100A73379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A58D329A9139100A73379 /* Assets.xcassets */; };
 		E64A58D629A913D800A73379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A58D529A913D800A73379 /* AppDelegate.swift */; };
-		E6FD87BD29B9F5C200B92C98 /* BlueStackSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E6FD87BC29B9F5C200B92C98 /* BlueStackSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,8 +130,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6FD87BD29B9F5C200B92C98 /* BlueStackSDK in Frameworks */,
+				CB4173DC2A139571004E96E6 /* BluestackAmazonPublisherServicesAdapter in Frameworks */,
+				CB4173D42A139571004E96E6 /* BlueStackLocationAdapter in Frameworks */,
+				CB4173D82A139571004E96E6 /* BlueStackSASAdapter in Frameworks */,
+				CB4173D62A139571004E96E6 /* BlueStackOguryAdapter in Frameworks */,
+				CB4173CC2A139571004E96E6 /* BlueStackAdColonyAdapter in Frameworks */,
+				CB4173DE2A139571004E96E6 /* BluestackCriteoAdapter in Frameworks */,
+				CB4173D02A139571004E96E6 /* BlueStackFacebookAdapter in Frameworks */,
+				CB4173CE2A139571004E96E6 /* BlueStackDFPAdapter in Frameworks */,
 				E61EBFB729AE0DD30009EE21 /* MAdvertiseCMP in Frameworks */,
+				CB4173D22A139571004E96E6 /* BlueStackImproveAdapter in Frameworks */,
+				CB4173DA2A139571004E96E6 /* BlueStackSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +432,16 @@
 			name = "DemoSwift-SPM";
 			packageProductDependencies = (
 				E61EBFB629AE0DD30009EE21 /* MAdvertiseCMP */,
-				E6FD87BC29B9F5C200B92C98 /* BlueStackSDK */,
+				CB4173CB2A139571004E96E6 /* BlueStackAdColonyAdapter */,
+				CB4173CD2A139571004E96E6 /* BlueStackDFPAdapter */,
+				CB4173CF2A139571004E96E6 /* BlueStackFacebookAdapter */,
+				CB4173D12A139571004E96E6 /* BlueStackImproveAdapter */,
+				CB4173D32A139571004E96E6 /* BlueStackLocationAdapter */,
+				CB4173D52A139571004E96E6 /* BlueStackOguryAdapter */,
+				CB4173D72A139571004E96E6 /* BlueStackSASAdapter */,
+				CB4173D92A139571004E96E6 /* BlueStackSDK */,
+				CB4173DB2A139571004E96E6 /* BluestackAmazonPublisherServicesAdapter */,
+				CB4173DD2A139571004E96E6 /* BluestackCriteoAdapter */,
 			);
 			productName = "DemoSwift-SPM";
 			productReference = E64A582629A9117400A73379 /* DemoSwift-SPM.app */;
@@ -446,7 +473,7 @@
 			mainGroup = E64A581D29A9117300A73379;
 			packageReferences = (
 				E61EBFB529AE0DD30009EE21 /* XCRemoteSwiftPackageReference "MadvertiseCMP" */,
-				E6FD87BB29B9F5C200B92C98 /* XCRemoteSwiftPackageReference "BlueStackSDK" */,
+				CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */,
 			);
 			productRefGroup = E64A582729A9117400A73379 /* Products */;
 			projectDirPath = "";
@@ -650,11 +677,18 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3X5C5YGPN7;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3DT94432UL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DemoSwift-SPM/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSLocationUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Tracking usage description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -663,10 +697,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.azerion.DemoSwift-SPM";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerion.ads.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_anypli;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Azerion Ads Test Application - Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoSwift-SPM/DemoSwift-SPM-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -679,15 +714,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3X5C5YGPN7;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3DT94432UL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DemoSwift-SPM/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSLocationUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "your application can be rejected by Apple if you use the device's location only for advertising";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Tracking usage description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -696,10 +738,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.azerion.DemoSwift-SPM";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.azerion.ads.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_anypli;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Azerion Ads Test Application - AdHoc";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoSwift-SPM/DemoSwift-SPM-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -731,6 +774,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/azerion/BlueStackSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "4.2.6-preview.2";
+			};
+		};
 		E61EBFB529AE0DD30009EE21 /* XCRemoteSwiftPackageReference "MadvertiseCMP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/azerion/MadvertiseCMP";
@@ -739,26 +790,63 @@
 				kind = branch;
 			};
 		};
-		E6FD87BB29B9F5C200B92C98 /* XCRemoteSwiftPackageReference "BlueStackSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/azerion/BlueStackSDK";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CB4173CB2A139571004E96E6 /* BlueStackAdColonyAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackAdColonyAdapter;
+		};
+		CB4173CD2A139571004E96E6 /* BlueStackDFPAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackDFPAdapter;
+		};
+		CB4173CF2A139571004E96E6 /* BlueStackFacebookAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackFacebookAdapter;
+		};
+		CB4173D12A139571004E96E6 /* BlueStackImproveAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackImproveAdapter;
+		};
+		CB4173D32A139571004E96E6 /* BlueStackLocationAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackLocationAdapter;
+		};
+		CB4173D52A139571004E96E6 /* BlueStackOguryAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackOguryAdapter;
+		};
+		CB4173D72A139571004E96E6 /* BlueStackSASAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackSASAdapter;
+		};
+		CB4173D92A139571004E96E6 /* BlueStackSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BlueStackSDK;
+		};
+		CB4173DB2A139571004E96E6 /* BluestackAmazonPublisherServicesAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BluestackAmazonPublisherServicesAdapter;
+		};
+		CB4173DD2A139571004E96E6 /* BluestackCriteoAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB4173CA2A139571004E96E6 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
+			productName = BluestackCriteoAdapter;
+		};
 		E61EBFB629AE0DD30009EE21 /* MAdvertiseCMP */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E61EBFB529AE0DD30009EE21 /* XCRemoteSwiftPackageReference "MadvertiseCMP" */;
 			productName = MAdvertiseCMP;
-		};
-		E6FD87BC29B9F5C200B92C98 /* BlueStackSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E6FD87BB29B9F5C200B92C98 /* XCRemoteSwiftPackageReference "BlueStackSDK" */;
-			productName = BlueStackSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

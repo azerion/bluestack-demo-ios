@@ -95,7 +95,12 @@ class InterstitialViewController: UIViewController , MNGAdsAdapterInterstitialDe
         interstitialAdsFactory.clickDelegate = self
         interstitialAdsFactory.viewController = self
 
-        let preferencess = MNGPreference.init()
+        let preference = MNGPreference.init()
+        preference.age = 25
+        preference.keyWord = "brand=myBrand;category=sport";//Separator in case of multiple entries is ; key=value
+        preference.gender = MNGGender.male
+        preference.setLocationPreferences(CLLocation.init(latitude: 78.88210, longitude: 44.45653), withConsentFlag: 2)
+        preference.contentUrl = "your content url"
         
         self.activityindicatorView.startAnimating()
         self.displayIntersButton.isHidden  = true
@@ -104,11 +109,11 @@ class InterstitialViewController: UIViewController , MNGAdsAdapterInterstitialDe
         if sender.tag == 1 {
             autoDisplay = false
             interstitialAdsFactory.placementId = "/\(MNG_ADS_APP_ID!)\(DemoSwiftConstants.PLACEMENTS.MNG_ADS_INTERSTITIAL_PLACEMENT_ID)"
-            interstitialAdsFactory.loadInterstitial(withPreferences: preferencess, autoDisplayed: false)
+            interstitialAdsFactory.loadInterstitial(withPreferences: preference, autoDisplayed: false)
         } else {
             autoDisplay = true
             interstitialAdsFactory.placementId = "/\(MNG_ADS_APP_ID!)\( DemoSwiftConstants.PLACEMENTS.MNG_ADS_INTERSTITIAL_OVERLAY_PLACEMENT_ID)"
-            interstitialAdsFactory.loadInterstitial(withPreferences: preferencess, autoDisplayed: true)
+            interstitialAdsFactory.loadInterstitial(withPreferences: preference, autoDisplayed: true)
         }
         
         APP_DELEGATE.drawerViewController?.statusBarStyle = .lightContent
