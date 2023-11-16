@@ -1,56 +1,50 @@
-![mad_AdNetworkMediation_rgb_small.png](https://bitbucket.org/repo/GyRXRR/images/3981639300-mad_AdNetworkMediation_rgb_small.png) for IOS
+![mad_AdNetworkMediation_rgb_small.png](https://bluestack.madvertise.com/img/login/logo-bluestack.svg)
 
-# BlueStack Mediation SDK for IOS
+# BlueStack SDK - iOS
 
-Madvertise provides functionalities for monetizing your mobile application: from premium sales with rich media, video and innovative formats, it facilitates inserting native mobile ads as well all standard display formats. MngAds SDK (BlueStack) is a library that allow you to handle Ads servers with the easy way.
+BlueStack provides functionalities for monetizing your mobile application: from premium sales with rich media, video and innovative formats, it facilitates inserting native mobile ads as well all standard display formats. BlueStack is a library that allow you to handle Ads servers with the easy way.
 
-
-| **SDK Integration** | 
-| -------- |
+| **SDK Integration**   |
+|-----------------------|
 | [Prepare for iOS 14+] |
-| [Setup the IOS SDK] | 
-| [IOS Change Log] 
-| [IOS Upgrade Guide] 
+| [Setup the IOS SDK]   |
+| [IOS Change Log]      |
+| [IOS Upgrade Guide]   |
 
 
-| **Ad Formats** | 
-| -------- |
-| [IOS Banner Ads] | 
-| [IOS Interstitial Ads] |
-| [IOS Infeed Ads] |
-| [IOS Native Ads] | 
-| [IOS Rewarded Video Ads]| 
-| [IOS Thumbnail Ads]| 
+| **Ad Formats**           | 
+|--------------------------|
+| [IOS Banner Ads]         | 
+| [IOS Interstitial Ads]   |
+| [IOS Infeed Ads]         |
+| [IOS Native Ads]         | 
+| [IOS Rewarded Video Ads] | 
+| [IOS Thumbnail Ads]      | 
 
 
-
-| **Advanced Settings** | 
-| -------- |
-|[IOS FAQ and Troubleshooting]
-|[IOS Debug Mode with Gyroscope Sensor]
-|[IOS Targeting Audiences] 
-
-
-| **Mediation Adapters** | 
-| -------- | 
-| [IOS Google Mobile Ads Adapter]
-| [IOS Mopub Adapter]
+| **Advanced Settings**                  | 
+|----------------------------------------|
+| [IOS FAQ and Troubleshooting]          |
+| [IOS Debug Mode with Gyroscope Sensor] |
+| [IOS Targeting Audiences]              |
 
 
+| **Mediation Adapters**          |
+|---------------------------------|
+| [IOS Google Mobile Ads Adapter] |
 
-[Setup the IOS SDK]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/setup
-[IOS Change Log]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/change-log
-[IOS Targeting Audiences]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/targeting-audiences
-[IOS Native Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/nativead
-[IOS Upgrade Guide]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/upgrading
-[IOS FAQ and Troubleshooting]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/faq
-[IOS Best practices]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/guidelines
-[IOS Debug Mode with Gyroscope Sensor]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/debug-mode-gyro
-[IOS Mopub Adapter]:https://bitbucket.org/mngcorp/mobile.mng-ads.com-mngperf/wiki/mopub-adaptor-ios
-[IOS Rewarded Video Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/rewarded-video-ios
-[IOS Infeed Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/infeed
-[IOS Banner Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/banner
-[IOS Interstitial Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/interstitial
-[IOS Google Mobile Ads Adapter]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/dfp-adapter-ios
-[IOS Thumbnail Ads]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/thumbnail
-[Prepare for iOS 14+]:https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/ios14
+
+[Setup the IOS SDK]:https://developers.bluestack.app/ios/getting-started/
+[IOS Change Log]:https://developers.bluestack.app/ios/changelog
+[IOS Targeting Audiences]:.https://developers.bluestack.app/ios/advanced-topics/targeting-audiences
+[IOS Native Ads]:https://developers.bluestack.app/ios/ad-formats/nativead
+[IOS Upgrade Guide]:https://developers.bluestack.app/ios/getting-started/upgrading
+[IOS FAQ and Troubleshooting]:https://developers.bluestack.app/ios/advanced-topics/faq
+[IOS Debug Mode with Gyroscope Sensor]:https://developers.bluestack.app/ios/advanced-topics/debug-mode-gyro
+[IOS Rewarded Video Ads]:https://developers.bluestack.app/ios/ad-formats/rewarded-video-ios
+[IOS Infeed Ads]:https://developers.bluestack.app/ios/ad-formats/infeed
+[IOS Banner Ads]:https://developers.bluestack.app/ios/ad-formats/banner
+[IOS Interstitial Ads]:https://developers.bluestack.app/ios/ad-formats/interstitial
+[IOS Google Mobile Ads Adapter]:https://developers.bluestack.app/ios/mediation-adapters/dfp-adapter-ios
+[IOS Thumbnail Ads]:https://developers.bluestack.app/ios/ad-formats/thumbnail
+[Prepare for iOS 14+]:https://developers.bluestack.app/ios/getting-started/ios14
