@@ -1,0 +1,174 @@
+PODS:
+  - AmazonPublisherServicesSDK (4.5.5)
+  - BlueStack-SDK (4.3.0):
+    - BlueStack-SDK/Full (= 4.3.0)
+  - BlueStack-SDK/AmazonPublisherServicesSDK (4.3.0):
+    - AmazonPublisherServicesSDK (= 4.5.5)
+    - BlueStack-SDK/Core
+  - BlueStack-SDK/Core (4.3.0)
+  - BlueStack-SDK/CriteoPublisherSdk (4.3.0):
+    - BlueStack-SDK/Core
+    - CriteoPublisherSdk (= 5.0.3)
+  - BlueStack-SDK/FBAudienceNetwork (4.3.0):
+    - BlueStack-SDK/Core
+    - FBAudienceNetwork (= 6.9.0)
+  - BlueStack-SDK/Full (4.3.0):
+    - BlueStack-SDK/Core
+    - BlueStack-SDK/Google-Mobile-Ads-SDK
+    - BlueStack-SDK/ImproveDigital
+    - BlueStack-SDK/In-App-Bidding
+    - BlueStack-SDK/OguryAds
+    - BlueStack-SDK/Smart-Display-SDK
+  - BlueStack-SDK/Google-Mobile-Ads-SDK (4.3.0):
+    - BlueStack-SDK/Core
+    - Google-Mobile-Ads-SDK (= 10.10.0)
+  - BlueStack-SDK/ImproveDigital (4.3.0):
+    - BlueStack-SDK/Core
+    - ImproveDigital (= 3.0.0)
+  - BlueStack-SDK/In-App-Bidding (4.3.0):
+    - BlueStack-SDK/AmazonPublisherServicesSDK
+    - BlueStack-SDK/Core
+    - BlueStack-SDK/CriteoPublisherSdk
+    - BlueStack-SDK/FBAudienceNetwork
+    - BlueStack-SDK/Smart-Display-SDK
+  - BlueStack-SDK/OguryAds (4.3.0):
+    - BlueStack-SDK/Core
+    - OgurySdk (= 4.0.0)
+  - BlueStack-SDK/Smart-Display-SDK (4.3.0):
+    - BlueStack-SDK/Core
+    - Smart-Core-SDK (= 7.21.0)
+    - Smart-Display-SDK (= 7.21.0)
+  - BlueStackDFPMediationAdapter (1.0.0):
+    - BlueStack-SDK (= 4.3.0)
+    - Google-Mobile-Ads-SDK (= 10.10.0)
+  - CriteoMRAID (1.0.1)
+  - CriteoPublisherSdk (5.0.3):
+    - CriteoMRAID (~> 1.0.1)
+    - CriteoPublisherSdk/Sdk (= 5.0.3)
+  - CriteoPublisherSdk/Sdk (5.0.3):
+    - CriteoMRAID (~> 1.0.1)
+  - FBAudienceNetwork (6.9.0)
+  - Google-Mobile-Ads-SDK (10.10.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAds-IMA-iOS-SDK (3.18.4)
+  - GoogleAppMeasurement (10.17.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.17.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.17.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.17.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.17.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.1.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.12.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.12.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.12.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.12.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.12.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.12.0)"
+  - GoogleUtilities/Reachability (7.12.0):
+    - GoogleUtilities/Logger
+  - ImproveDigital (3.0.0):
+    - GoogleAds-IMA-iOS-SDK (= 3.18.4)
+  - nanopb (2.30909.1):
+    - nanopb/decode (= 2.30909.1)
+    - nanopb/encode (= 2.30909.1)
+  - nanopb/decode (2.30909.1)
+  - nanopb/encode (2.30909.1)
+  - OguryAds (3.3.0):
+    - OguryAds/OMID (= 3.3.0)
+    - OguryCore (= 1.3.0)
+  - OguryAds/OMID (3.3.0):
+    - OguryCore (= 1.3.0)
+  - OguryChoiceManager (4.1.0):
+    - OguryCore (= 1.3.0)
+  - OguryCore (1.3.0)
+  - OgurySdk (4.0.0):
+    - OguryCore (= 1.3.0)
+    - OgurySdk/OguryAds (= 4.0.0)
+    - OgurySdk/OguryChoiceManager (= 4.0.0)
+  - OgurySdk/OguryAds (4.0.0):
+    - OguryAds (= 3.3.0)
+    - OguryCore (= 1.3.0)
+  - OgurySdk/OguryChoiceManager (4.0.0):
+    - OguryChoiceManager (= 4.1.0)
+    - OguryCore (= 1.3.0)
+  - PromisesObjC (2.3.1)
+  - Smart-Core-SDK (7.21.0)
+  - Smart-Display-SDK (7.21.0):
+    - Smart-Core-SDK (~> 7.21)
+
+DEPENDENCIES:
+  - BlueStackDFPMediationAdapter
+  - Google-Mobile-Ads-SDK
+
+SPEC REPOS:
+  trunk:
+    - AmazonPublisherServicesSDK
+    - BlueStack-SDK
+    - BlueStackDFPMediationAdapter
+    - CriteoMRAID
+    - CriteoPublisherSdk
+    - FBAudienceNetwork
+    - Google-Mobile-Ads-SDK
+    - GoogleAds-IMA-iOS-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - ImproveDigital
+    - nanopb
+    - OguryAds
+    - OguryChoiceManager
+    - OguryCore
+    - OgurySdk
+    - PromisesObjC
+    - Smart-Core-SDK
+    - Smart-Display-SDK
+
+SPEC CHECKSUMS:
+  AmazonPublisherServicesSDK: a1e1dbf455266de502e0dfe6ed32111dc8456b6b
+  BlueStack-SDK: c0cbb0a02e70dbe99440791a280713c93dc4221b
+  BlueStackDFPMediationAdapter: 1fdde43267047a2a37c391a3a1e02330c2a77a52
+  CriteoMRAID: a037bee17b929a8bede8a07279e01a269cd85210
+  CriteoPublisherSdk: 791472ed9028dc6d0d430f1a109526d231f89d07
+  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
+  Google-Mobile-Ads-SDK: 509e53bd31c6accb2d9c33b0eb66df1d54dda622
+  GoogleAds-IMA-iOS-SDK: b01284e3bf3d64ba948de6692ffda531452c3713
+  GoogleAppMeasurement: 4dcddfc7f102825c1c4e6422cb35567b101881a7
+  GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
+  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
+  ImproveDigital: 24ef6d5d2ba9e9611ce83f9d76b1e84c4aecfd86
+  nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
+  OguryAds: 74248dc234219dc562f0abda02b8718e569e903d
+  OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
+  OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
+  OgurySdk: a19b5361f548d2a0a477b7eaf7520969aa5e28b7
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  Smart-Core-SDK: 53921bda3055eadd89c3b9a3d7b50d92c19c4b8d
+  Smart-Display-SDK: e824ba0e1e569071585ecb3a1afe24b6348366c1
+
+PODFILE CHECKSUM: 5a41be67b64af70a29ba33c6f324ad96a5d68a51
+
+COCOAPODS: 1.13.0

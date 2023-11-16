@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/BlueStack-SDK/BlueStack-SDK-xcframeworks.sh
+${PODS_ROOT}/BlueStack-SDK/BluestackAmazonPublisherServicesAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackSDK.xcframework
+${PODS_ROOT}/BlueStack-SDK/BluestackCriteoAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackFacebookAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackDFPAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackImproveAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackOguryAdapter.xcframework
+${PODS_ROOT}/BlueStack-SDK/BlueStackSASAdapter.xcframework

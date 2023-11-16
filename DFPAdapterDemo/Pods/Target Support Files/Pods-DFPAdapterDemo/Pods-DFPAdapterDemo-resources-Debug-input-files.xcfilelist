@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-DFPAdapterDemo/Pods-DFPAdapterDemo-resources.sh
+${PODS_ROOT}/BlueStack-SDK/BlueStackSDK.xcframework/ios-arm64/BlueStackSDK.framework/BlueStackSDKResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/CriteoMRAID/CriteoMRAIDResource.bundle
+${PODS_ROOT}/ImproveDigital/ImproveDigital.xcframework/ios-arm64/ImproveDigital.framework/ImproveDigitalResources.bundle
