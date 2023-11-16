@@ -1,0 +1,8 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/AmazonPublisherServicesSDK/BluestackAmazonPublisherServicesAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/Core/BlueStackSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/CriteoPublisherSdk/BluestackCriteoAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/FBAudienceNetwork/BlueStackFacebookAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/Google-Mobile-Ads-SDK/BlueStackDFPAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/ImproveDigital/BlueStackImproveAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/OguryAds/BlueStackOguryAdapter.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/BlueStack-SDK/Smart-Display-SDK/BlueStackSASAdapter.framework

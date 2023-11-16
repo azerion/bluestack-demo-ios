@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/OguryAds/OguryAds-xcframeworks.sh
+${PODS_ROOT}/OguryAds/OguryAds.xcframework
+${PODS_ROOT}/OguryAds/OMSDK_Ogury.xcframework
